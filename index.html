@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>$RABBID — Solana Colony</title>
-<meta name="description" content="$RABBID — The Solana Colony.">
+<meta content="$RABBID — The Solana Colony." name="description"/>
 <style>
 :root{--bg:#020817;--panel:rgba(7,22,48,.76);--line:rgba(59,130,246,.28);--text:#f7fbff;--muted:#9bb4d8;--blue:#1677ff;--cyan:#38bdf8;--pink:#2563eb}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -121,8 +122,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 45px;color:#68718d;font-s
 .wall-empty b{font-size:14px;letter-spacing:.12em;color:#fff}
 .wall-empty span{max-width:560px;margin-top:9px;color:#88a5cb;font-size:13px;line-height:1.6}
 </style>
-
-
 <style id="rabbid-chaos-lab-styles">
 .chaos-section{position:relative;overflow:hidden}
 .chaos-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:18px}
@@ -163,7 +162,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 45px;color:#68718d;font-s
 @media(max-width:900px){.chaos-grid{grid-template-columns:1fr 1fr}.chaos-core{grid-column:1/-1;grid-row:1}}
 @media(max-width:600px){.chaos-head{flex-direction:column;align-items:flex-start}.chaos-grid{grid-template-columns:1fr}.chaos-core{grid-column:auto;grid-row:auto}.chaos-card{min-height:245px}.chaos-orbit{width:180px;height:180px}}
 </style>
-
 <style id="official-document-section">
 .official-doc-section{padding:30px 0 70px;display:flex;justify-content:center}
 .official-doc-card{
@@ -197,8 +195,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 45px;color:#68718d;font-s
   .official-doc-section{padding-bottom:48px}
 }
 </style>
-
-
 <style id="rabbid-colony-upgrades">
 .upgrade-section{padding:34px 0 72px}
 .upgrade-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:18px}
@@ -274,8 +270,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 45px;color:#68718d;font-s
     .id-traits{grid-template-columns:1fr}
 }
 </style>
-
-
 <style id="rabbid-scream-button-style">
 .rabbid-scream-button{
   position:fixed;left:22px;bottom:22px;z-index:5000;
@@ -300,8 +294,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 45px;color:#68718d;font-s
   .rabbid-scream-button{left:14px;bottom:14px;padding:10px 13px;font-size:11px}
 }
 </style>
-
-
 <style id="rabbid-entry-animation">
 body.entry-lock{overflow:hidden}
 .entry-screen{
@@ -377,41 +369,233 @@ body.entry-lock{overflow:hidden}
   .entry-label{font-size:9px;letter-spacing:.24em}
 }
 </style>
-
-
 <style id="rabbid-live-chart-style">
 .pump-chart-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 4px 12px}.pump-live-badge{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:900;letter-spacing:.12em;color:#eaf6ff}.pump-live-dot{width:8px;height:8px;border-radius:50%;background:#49d7ff;box-shadow:0 0 14px rgba(73,215,255,.85);animation:pumpPulse 1.4s infinite}.pump-chart-source{font-size:11px;color:#7290ad}.pump-chart-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.pump-chart-stats>div{background:rgba(4,19,37,.72);border:1px solid rgba(92,153,211,.18);border-radius:12px;padding:10px 12px}.pump-chart-stats span{display:block;font-size:9px;letter-spacing:.12em;color:#6f8da8;font-weight:800;margin-bottom:5px}.pump-chart-stats strong{display:block;font-size:15px;color:#f3f9ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pump-chart-toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:8px 0}.pump-chart-ranges{display:flex;gap:6px}.pump-chart-ranges button{border:1px solid rgba(92,153,211,.25);background:#071525;color:#89a4bd;border-radius:8px;padding:7px 11px;font-size:11px;font-weight:800;cursor:pointer}.pump-chart-ranges button.active,.pump-chart-ranges button:hover{background:#1769ef;color:#fff;border-color:#3d88ff}.pump-chart-state{font-size:10px;color:#7190ac}.pump-chart-wrap{position:relative;height:500px;border:1px solid rgba(92,153,211,.18);border-radius:14px;overflow:hidden;background:#030912}.pump-chart-wrap canvas{width:100%;height:100%;display:block}.pump-chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px;text-align:center;color:#8098ae;background:rgba(3,9,18,.72)}.pump-chart-empty strong{font-size:14px;color:#d8e8f6}.pump-chart-empty span{font-size:11px}.pump-chart-empty-dot{width:8px;height:8px;border-radius:50%;background:#5d86ff;box-shadow:0 0 12px rgba(93,134,255,.8)}.pump-chart-footer{display:flex;justify-content:space-between;gap:12px;padding:8px 3px 2px;color:#5e7893;font-size:10px}.pump-chart-footer div:last-child{text-align:right}.pump-chart-wrap:after{content:'PUMP.FUN';position:absolute;left:12px;bottom:8px;color:rgba(120,155,190,.25);font-size:10px;font-weight:900;letter-spacing:.12em;pointer-events:none}@keyframes pumpPulse{0%,100%{opacity:.55;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}
 @media(max-width:700px){.pump-chart-stats{grid-template-columns:repeat(2,1fr)}.pump-chart-wrap{height:390px}.pump-chart-topline,.pump-chart-footer{align-items:flex-start;flex-direction:column}.pump-chart-footer div:last-child{text-align:left}.pump-chart-source{font-size:10px}.pump-chart-toolbar{align-items:flex-start;flex-direction:column}.pump-chart-ranges{width:100%;overflow:auto}.pump-chart-ranges button{flex:0 0 auto}}
 </style>
+<style id="rabbid-blue-refresh">
+/* RABBID BLUE REFRESH — visual-only layer; existing functionality is preserved */
+:root{
+  --bg:#010817;--panel:rgba(5,24,56,.78);--line:rgba(55,157,255,.38);
+  --blue:#1687ff;--cyan:#42d2ff;--blue2:#0757d8;
+}
+body{
+  background:
+    radial-gradient(circle at 12% 7%,rgba(0,125,255,.34),transparent 30%),
+    radial-gradient(circle at 88% 82%,rgba(0,80,255,.25),transparent 31%),
+    linear-gradient(135deg,#010817,#031a3c 52%,#010817)!important;
+}
+body:after{
+  background:radial-gradient(circle at 50% 18%,rgba(30,145,255,.13),transparent 38%)!important;
+}
+body:before{
+  opacity:.42!important;
+  background-image:
+    linear-gradient(rgba(70,165,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(70,165,255,.07) 1px,transparent 1px)!important;
+  background-size:38px 38px!important;
+}
+nav{
+  background:rgba(2,14,35,.78)!important;
+  border-color:rgba(55,157,255,.45)!important;
+  box-shadow:0 15px 50px rgba(0,55,150,.22),inset 0 1px 0 rgba(255,255,255,.06)!important;
+}
+.brand span{color:#42d2ff!important;text-shadow:0 0 20px rgba(66,210,255,.55)}
+h1{
+  background:linear-gradient(90deg,#fff 0%,#75bcff 48%,#39d6ff 100%)!important;
+  -webkit-background-clip:text!important;background-clip:text!important;
+  text-shadow:0 0 35px rgba(25,140,255,.18);
+}
+.coin{filter:drop-shadow(0 0 34px rgba(0,125,255,.58))!important}
+.coin-face{
+  border-color:#2599ff!important;
+  background:radial-gradient(circle at 35% 25%,#55c5ff,#086be4 55%,#03275e)!important;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,.1),inset 0 -18px 35px rgba(0,0,0,.34),0 0 42px rgba(21,137,255,.3)!important;
+}
+.card,.live-card,.chain-link-card,.chaos-card,.support-card{
+  border-color:rgba(55,157,255,.30)!important;
+  box-shadow:0 20px 60px rgba(0,45,130,.17),inset 0 1px 0 rgba(255,255,255,.05)!important;
+}
+.card:hover,.live-card:hover,.chain-link-card:hover,.chaos-card:hover{
+  border-color:rgba(82,190,255,.68)!important;
+  box-shadow:0 24px 70px rgba(0,55,150,.24),0 0 28px rgba(30,150,255,.10)!important;
+}
+.btn{
+  background:linear-gradient(135deg,#087dff,#0752c9)!important;
+  border-color:rgba(88,190,255,.42)!important;
+  box-shadow:0 12px 36px rgba(0,110,255,.28)!important;
+}
+.btn:hover{box-shadow:0 16px 48px rgba(0,135,255,.43)!important}
+.lang-switch button.active{background:#087dff!important}
+.ca{
+  border-color:rgba(66,190,255,.30)!important;
+  background:linear-gradient(135deg,rgba(15,73,130,.16),rgba(35,95,210,.10))!important;
+}
+.copy{
+  background:linear-gradient(135deg,#fff,#d9f4ff)!important;
+}
+.support-telegram{
+  background:linear-gradient(135deg,#087dff,#39c9ff)!important;
+  box-shadow:0 12px 34px rgba(22,140,255,.28)!important;
+}
+.chaos-logo{box-shadow:0 0 30px #31b8ff,0 0 90px rgba(43,171,255,.38)!important}
+.falling-coins .fall-coin{
+  background:radial-gradient(circle at 34% 25%,#55c5ff,#0865df 55%,#03265f)!important;
+  border-color:rgba(92,191,255,.68)!important;
+  box-shadow:inset 0 0 0 3px rgba(255,255,255,.08),0 0 25px rgba(37,130,255,.28)!important;
+}
+.rabbid-scream-button{
+  border-color:rgba(65,185,255,.45)!important;
+  background:rgba(3,22,50,.82)!important;
+  box-shadow:0 10px 34px rgba(0,75,180,.22)!important;
+}
+.rabbid-scream-button:hover{
+  border-color:rgba(90,205,255,.8)!important;
+  box-shadow:0 14px 44px rgba(0,120,255,.34)!important;
+}
+.blue-scanline{
+  position:fixed;left:0;right:0;top:-10vh;height:1px;z-index:60;
+  pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(74,205,255,.62),transparent);
+  box-shadow:0 0 18px rgba(36,154,255,.55);
+  animation:rabbidBlueScan 8s linear infinite;
+}
+@keyframes rabbidBlueScan{to{top:110vh}}
+@media(max-width:760px){
+  nav{top:8px;margin-top:8px}
+  .hero{padding-top:72px}
+}
+</style>
+<div aria-hidden="true" class="blue-scanline"></div>
+<style>
+/* ===== RABBID COLONY V2 ===== */
+.colony-v2{position:relative;padding:42px 0 78px}
+.colony-v2 .colony-shell{position:relative;border:1px solid rgba(64,158,255,.28);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,rgba(4,18,44,.96),rgba(2,9,23,.88));box-shadow:0 30px 90px rgba(0,70,180,.18),inset 0 1px 0 rgba(255,255,255,.05)}
+.colony-v2 .colony-shell:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 12% 10%,rgba(46,164,255,.14),transparent 27%),radial-gradient(circle at 92% 88%,rgba(28,92,255,.1),transparent 30%);}
+.colony-v2 .colony-inner{position:relative;z-index:1;padding:28px}
+.colony-v2 .kicker{font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:#66b8ff}
+.colony-v2 h3{margin:6px 0 8px;font-size:clamp(30px,5vw,52px);letter-spacing:-.045em}
+.colony-v2 .intro{max-width:760px;color:#9db6d9;line-height:1.7;margin:0}
+.colony-v2 .hub-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:22px}
+.colony-v2 .panel{border:1px solid rgba(70,150,255,.22);background:rgba(2,13,31,.72);border-radius:20px;padding:18px}
+.colony-v2 .panel h4{margin:0 0 14px;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;color:#d8ecff}
+.colony-v2 .feed{display:grid;gap:10px}
+.colony-v2 .feed-item{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:12px;padding:12px 13px;border:1px solid rgba(68,154,255,.16);border-radius:14px;background:rgba(4,20,44,.6)}
+.colony-v2 .feed-dot{width:10px;height:10px;border-radius:50%;background:#38bdf8;box-shadow:0 0 16px rgba(56,189,248,.65);margin-left:8px}
+.colony-v2 .feed-main{font-weight:800;font-size:13px}
+.colony-v2 .feed-sub{font-size:11px;color:#7590b5;margin-top:3px}
+.colony-v2 .feed-time{font-size:10px;color:#5f7ea6;text-transform:uppercase;letter-spacing:1px}
+.colony-v2 .missions{display:grid;gap:10px}
+.colony-v2 .mission{display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:10px;padding:12px;border-radius:14px;background:rgba(7,24,49,.62);border:1px solid rgba(72,148,255,.14)}
+.colony-v2 .mission input{width:17px;height:17px;accent-color:#2694ff}
+.colony-v2 .mission strong{font-size:13px;display:block}
+.colony-v2 .mission span{font-size:10px;color:#7390b4}
+.colony-v2 .mission-state{font-size:9px;letter-spacing:1.1px;color:#61b6ff;border:1px solid rgba(97,182,255,.22);padding:5px 7px;border-radius:999px}
+.colony-v2 .mission.done{opacity:.6}
+.colony-v2 .mission.done strong{text-decoration:line-through}
+.colony-v2 .stats-line{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.colony-v2 .tiny-stat{padding:12px;border:1px solid rgba(72,148,255,.14);border-radius:14px;background:rgba(6,25,50,.48)}
+.colony-v2 .tiny-label{font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:#6f89ab}
+.colony-v2 .tiny-value{display:block;margin-top:6px;font-size:19px;font-weight:950}
+.colony-v2 .mood{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.colony-v2 .mood-bar{height:9px;border-radius:999px;background:#06152b;overflow:hidden;border:1px solid rgba(68,154,255,.18)}
+.colony-v2 .mood-fill{height:100%;width:82%;background:linear-gradient(90deg,#1d7cf2,#4ddcff);box-shadow:0 0 22px rgba(56,189,248,.5);transition:width .55s ease}
+.colony-v2 .mood-emoji{font-size:28px;filter:drop-shadow(0 0 12px rgba(56,189,248,.45))}
+.colony-v2 .mood-text{font-size:12px;font-weight:850;margin-bottom:7px}
+.colony-v2 .hub-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.colony-v2 .hub-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 14px;border-radius:12px;text-decoration:none;color:#fff;font-weight:850;font-size:12px;border:1px solid rgba(82,166,255,.28);background:linear-gradient(135deg,#0b6dff,#164dbb);box-shadow:0 10px 30px rgba(0,90,255,.16);transition:.2s}
+.colony-v2 .hub-btn.secondary{background:rgba(255,255,255,.035)}
+.colony-v2 .hub-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.colony-v2 .quote{margin-top:18px;padding:16px 18px;border-left:2px solid #39bdf8;background:rgba(30,130,255,.05);color:#bcd3ee;font-size:13px;line-height:1.65;border-radius:0 14px 14px 0}
+@media(max-width:900px){.colony-v2 .hub-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.colony-v2 .colony-inner{padding:19px}.colony-v2 .stats-line{grid-template-columns:1fr}.colony-v2 .feed-item{grid-template-columns:25px 1fr}.colony-v2 .feed-time{display:none}.colony-v2 .mission{grid-template-columns:24px 1fr}.colony-v2 .mission-state{display:none}.colony-v2 .hub-btn{width:100%}}
+</style><style>
+@media(max-width:760px){
+  nav>div:last-child{max-width:100%;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+  nav>div:last-child::-webkit-scrollbar{display:none}
+  nav a{white-space:nowrap}
+}
+</style>
+<style id="rabbid-title-bounce-fixed">
+.rabbid-title{
+  display:inline-flex;
+  align-items:flex-end;
+  justify-content:center;
+  white-space:nowrap;
+  overflow:visible;
+  user-select:none;
+  -webkit-user-select:none;
+  cursor:default;
+}
+.rabbid-title .rabbid-letter{
+  display:inline-block;
+  position:relative;
+  will-change:transform;
+  transform-origin:50% 100%;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  animation:rabbidLetterBounceFixed 1.4s ease-in-out infinite !important;
+}
+/* Stagger every character to create a permanent left-to-right wave. */
+.rabbid-title .rabbid-letter:nth-child(1){animation-delay:0s !important}
+.rabbid-title .rabbid-letter:nth-child(2){animation-delay:.14s !important}
+.rabbid-title .rabbid-letter:nth-child(3){animation-delay:.28s !important}
+.rabbid-title .rabbid-letter:nth-child(4){animation-delay:.42s !important}
+.rabbid-title .rabbid-letter:nth-child(5){animation-delay:.56s !important}
+.rabbid-title .rabbid-letter:nth-child(6){animation-delay:.70s !important}
+.rabbid-title .rabbid-letter:nth-child(7){animation-delay:.84s !important}
 
+@keyframes rabbidLetterBounceFixed{
+  0%,60%,100%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+  18%{transform:translate3d(0,-24px,0) rotate(-2deg) scale(1.045)}
+  30%{transform:translate3d(0,-7px,0) rotate(1deg) scale(1.015)}
+  42%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+}
+</style>
+<style id="rabbid-hero-actions-v5">
+.hero .actions{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  width:min(540px,100%);
+  margin:30px auto 0;
+  gap:12px;
+}
+.hero .actions .btn:first-child{
+  grid-column:1 / -1;
+  width:100%;
+}
+.hero .actions .btn:nth-child(2),
+.hero .actions .btn:nth-child(3){
+  width:100%;
+}
+@media(max-width:560px){
+  .hero .actions{grid-template-columns:1fr;}
+  .hero .actions .btn:first-child{grid-column:auto;}
+}
+</style>
 </head>
 <body class="entry-lock">
-
-<div class="entry-screen" id="entryScreen" aria-hidden="true">
-  <div class="entry-flash"></div>
-  <div class="entry-ring"></div>
-  <div class="entry-ring r2"></div>
-  <div class="entry-core">
-    <img src="rabbid-logo.png" alt="$RABBID">
-  </div>
-  <div class="entry-label">THE COLONY IS AWAKE</div>
+<div aria-hidden="true" class="entry-screen" id="entryScreen">
+<div class="entry-flash"></div>
+<div class="entry-ring"></div>
+<div class="entry-ring r2"></div>
+<div class="entry-core">
+<img alt="$RABBID" src="rabbid-logo.png"/>
 </div>
-
-
-<button class="rabbid-scream-button" id="rabbidScreamButton" type="button" aria-label="Play Rabbid scream">
-  <span class="speaker">🔊</span><span>RABBID SCREAM</span>
+<div class="entry-label">THE COLONY IS AWAKE</div>
+</div>
+<button aria-label="Play Rabbid scream" class="rabbid-scream-button" id="rabbidScreamButton" type="button">
+<span class="speaker">🔊</span><span>RABBID SCREAM</span>
 </button>
-
 <nav><div class="brand">$<span>RABBID</span></div><div>
-<a href="#manifesto" data-en="Manifesto" data-ar="البيان" data-ru="Манифест" data-zh="宣言" data-pt="Manifesto" data-fr="Manifeste">Manifesto</a>
-<a href="#chart" data-en="Chart" data-ar="الرسم" data-ru="График" data-zh="图表" data-pt="Gráfico" data-fr="Graphique">Chart</a>
-<a href="#proof" data-en="Proof" data-ar="إثبات" data-ru="Пруф" data-zh="链上证明" data-pt="Prova" data-fr="Preuve">Proof</a>
-<a href="https://x.com/Rabbid_solana" target="_blank" rel="noopener">X</a>
-<a href="rabbid_official_document.pdf" target="_blank" rel="noopener" data-en="Document" data-ru="Документ" data-zh="文档" data-pt="Documento" data-fr="Document" data-ar="الوثيقة">Document</a>
-<span class="lang-switch"><button id="enBtn" class="active" type="button" onclick="setLang('en')">EN</button><button id="ruBtn" type="button" onclick="setLang('ru')">RU</button><button id="zhBtn" type="button" onclick="setLang('zh')">中文</button><button id="ptBtn" type="button" onclick="setLang('pt')">PT</button><button id="frBtn" type="button" onclick="setLang('fr')">FR</button><button id="arBtn" type="button" onclick="setLang('ar')">AR</button></span>
+<a data-ar="البيان" data-en="Manifesto" data-fr="Manifeste" data-pt="Manifesto" data-ru="Манифест" data-zh="宣言" href="#manifesto">Manifesto</a>
+<a data-ar="الرسم" data-en="Chart" data-fr="Graphique" data-pt="Gráfico" data-ru="График" data-zh="图表" href="#chart">Chart</a>
+<a data-ar="إثبات" data-en="Proof" data-fr="Preuve" data-pt="Prova" data-ru="Пруф" data-zh="链上证明" href="#proof">Proof</a>
+<a data-ar="المستعمرة" data-en="Colony" data-fr="Colonie" data-pt="Colônia" data-ru="Колония" data-zh="社区" href="#colony">Colony</a><a href="https://x.com/Rabbid_solana" rel="noopener" target="_blank">X</a>
+<a data-ar="الوثيقة" data-en="Document" data-fr="Document" data-pt="Documento" data-ru="Документ" data-zh="文档" href="rabbid_official_document.pdf" rel="noopener" target="_blank">Document</a>
+<span class="lang-switch"><button class="active" id="enBtn" onclick="setLang('en')" type="button">EN</button><button id="ruBtn" onclick="setLang('ru')" type="button">RU</button><button id="zhBtn" onclick="setLang('zh')" type="button">中文</button><button id="ptBtn" onclick="setLang('pt')" type="button">PT</button><button id="frBtn" onclick="setLang('fr')" type="button">FR</button><button id="arBtn" onclick="setLang('ar')" type="button">AR</button></span>
 </div></nav>
-
-<div class="falling-coins" aria-hidden="true">
+<div aria-hidden="true" class="falling-coins">
 <span class="fall-coin" style="--left:4%;--size:34px;--duration:20s;--delay:-7s;--blur:2.2px;--opacity:.22;--drift:55px"></span>
 <span class="fall-coin" style="--left:13%;--size:22px;--duration:26s;--delay:-15s;--blur:3px;--opacity:.17;--drift:-40px"></span>
 <span class="fall-coin" style="--left:22%;--size:46px;--duration:24s;--delay:-4s;--blur:1.8px;--opacity:.2;--drift:70px"></span>
@@ -422,319 +606,344 @@ body.entry-lock{overflow:hidden}
 <span class="fall-coin" style="--left:81%;--size:29px;--duration:30s;--delay:-17s;--blur:2.8px;--opacity:.16;--drift:-45px"></span>
 <span class="fall-coin" style="--left:91%;--size:36px;--duration:23s;--delay:-9s;--blur:2.2px;--opacity:.18;--drift:50px"></span>
 </div>
-<div class="symbols" aria-hidden="true">
+<div aria-hidden="true" class="symbols">
 <span>✦</span><span>✧</span><span>◆</span><span>◈</span><span>✦</span><span>＋</span><span>◇</span><span>✧</span><span>◆</span><span>✦</span>
 </div>
 <main class="container">
 <section class="hero">
-<div class="badge" data-en="● Solana Colony / 2026" data-ar="● مستعمرة سولانا / 2026" data-ru="● Колония Solana / 2026" data-zh="● Solana 社区 / 2026" data-pt="● Colônia Solana / 2026" data-fr="● Colonie Solana / 2026">● Solana Colony / 2026</div>
+<div class="badge" data-ar="● مستعمرة سولانا / 2026" data-en="● Solana Colony / 2026" data-fr="● Colonie Solana / 2026" data-pt="● Colônia Solana / 2026" data-ru="● Колония Solana / 2026" data-zh="● Solana 社区 / 2026">● Solana Colony / 2026</div>
 <div class="coin-stage">
-  <div class="coin-particles" aria-hidden="true">
-    <i style="--x:-74px;--y:-38px;--s:4px;--d:2.8s;--delay:-.3s"></i>
-    <i style="--x:66px;--y:-58px;--s:3px;--d:3.4s;--delay:-1.1s"></i>
-    <i style="--x:-82px;--y:18px;--s:3px;--d:2.5s;--delay:-1.8s"></i>
-    <i style="--x:82px;--y:28px;--s:5px;--d:3.8s;--delay:-.8s"></i>
-    <i style="--x:-48px;--y:68px;--s:3px;--d:3.1s;--delay:-2.2s"></i>
-    <i style="--x:48px;--y:70px;--s:4px;--d:2.7s;--delay:-1.5s"></i>
-    <i style="--x:0px;--y:-84px;--s:3px;--d:3.6s;--delay:-2.7s"></i>
-    <i style="--x:0px;--y:84px;--s:4px;--d:3.0s;--delay:-.5s"></i>
-    <i style="--x:-62px;--y:46px;--s:2px;--d:2.3s;--delay:-1.2s"></i>
-    <i style="--x:70px;--y:-12px;--s:2px;--d:2.9s;--delay:-2.0s"></i>
-  </div>
-  <div class="coin" aria-label="$RABBID coin logo">
-  <div class="coin-face coin-front"><img class="coin-logo" src="rabbid-logo.png" alt="$RABBID logo"></div>
-  <div class="coin-edge"></div>
-  <div class="coin-face coin-back"><img class="coin-logo" src="rabbid-logo.png" alt="$RABBID logo"></div>
+<div aria-hidden="true" class="coin-particles">
+<i style="--x:-74px;--y:-38px;--s:4px;--d:2.8s;--delay:-.3s"></i>
+<i style="--x:66px;--y:-58px;--s:3px;--d:3.4s;--delay:-1.1s"></i>
+<i style="--x:-82px;--y:18px;--s:3px;--d:2.5s;--delay:-1.8s"></i>
+<i style="--x:82px;--y:28px;--s:5px;--d:3.8s;--delay:-.8s"></i>
+<i style="--x:-48px;--y:68px;--s:3px;--d:3.1s;--delay:-2.2s"></i>
+<i style="--x:48px;--y:70px;--s:4px;--d:2.7s;--delay:-1.5s"></i>
+<i style="--x:0px;--y:-84px;--s:3px;--d:3.6s;--delay:-2.7s"></i>
+<i style="--x:0px;--y:84px;--s:4px;--d:3.0s;--delay:-.5s"></i>
+<i style="--x:-62px;--y:46px;--s:2px;--d:2.3s;--delay:-1.2s"></i>
+<i style="--x:70px;--y:-12px;--s:2px;--d:2.9s;--delay:-2.0s"></i>
+</div>
+<div aria-label="$RABBID coin logo" class="coin">
+<div class="coin-face coin-front"><img alt="$RABBID logo" class="coin-logo" src="rabbid-logo.png"/></div>
+<div class="coin-edge"></div>
+<div class="coin-face coin-back"><img alt="$RABBID logo" class="coin-logo" src="rabbid-logo.png"/></div>
 </div></div>
-<h1>$RABBID</h1>
-<h2 data-en="THE SOLANA COLONY" data-ar="مستعمرة سولانا" data-ru="КОЛОНИЯ SOLANA" data-zh="SOLANA 社区" data-pt="A COLÔNIA SOLANA" data-fr="LA COLONIE SOLANA">THE SOLANA COLONY</h2>
-<p data-en="Pure organic execution. No paid marketing scams. No hidden developer wallets. Just code, community and global chaos." data-ar="تطور عضوي بحت. لا تسويق مدفوع مضلل، ولا محافظ مطورين مخفية. فقط الكود والمجتمع والفوضى العالمية." data-ru="Чистое органическое развитие. Никакого платного маркетинга. Никаких скрытых кошельков разработчиков. Только код, сообщество и глобальный хаос." data-zh="纯粹的自然发展。没有付费营销骗局，没有隐藏的开发者钱包。只有代码、社区与全球混沌。" data-pt="Execução orgânica. Sem golpes de marketing pago, sem carteiras ocultas de desenvolvedores. Apenas código, comunidade e caos global." data-fr="Une croissance organique. Aucun marketing payant douteux, aucun portefeuille caché de développeur. Seulement du code, une communauté et du chaos mondial.">Pure organic execution. No paid marketing scams. No hidden developer wallets. Just code, community and global chaos.</p>
+<h1 class="rabbid-title" aria-label="$RABBID"><span class="rabbid-letter" style="--i:0">$</span><span class="rabbid-letter" style="--i:1">R</span><span class="rabbid-letter" style="--i:2">A</span><span class="rabbid-letter" style="--i:3">B</span><span class="rabbid-letter" style="--i:4">B</span><span class="rabbid-letter" style="--i:5">I</span><span class="rabbid-letter" style="--i:6">D</span></h1>
+<h2 data-ar="مستعمرة سولانا" data-en="THE SOLANA COLONY" data-fr="LA COLONIE SOLANA" data-pt="A COLÔNIA SOLANA" data-ru="КОЛОНИЯ SOLANA" data-zh="SOLANA 社区">THE SOLANA COLONY</h2>
+<p data-ar="تطور عضوي بحت. لا تسويق مدفوع مضلل، ولا محافظ مطورين مخفية. فقط الكود والمجتمع والفوضى العالمية." data-en="Pure organic execution. No paid marketing scams. No hidden developer wallets. Just code, community and global chaos." data-fr="Une croissance organique. Aucun marketing payant douteux, aucun portefeuille caché de développeur. Seulement du code, une communauté et du chaos mondial." data-pt="Execução orgânica. Sem golpes de marketing pago, sem carteiras ocultas de desenvolvedores. Apenas código, comunidade e caos global." data-ru="Чистое органическое развитие. Никакого платного маркетинга. Никаких скрытых кошельков разработчиков. Только код, сообщество и глобальный хаос." data-zh="纯粹的自然发展。没有付费营销骗局，没有隐藏的开发者钱包。只有代码、社区与全球混沌。">Pure organic execution. No paid marketing scams. No hidden developer wallets. Just code, community and global chaos.</p>
 <div class="actions">
-<a class="btn" href="https://pump.fun/coin/FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump" target="_blank" rel="noopener">🚀 BUY ON PUMP.FUN</a>
-<a class="btn secondary" href="https://t.me/rabbid_coin_sol" target="_blank" rel="noopener">💬 TELEGRAM</a>
-<a class="btn secondary" href="https://x.com/Rabbid_solana" target="_blank" rel="noopener">𝕏 OFFICIAL X</a>
+<a class="btn" data-ar="دخول المستعمرة" data-en="ENTER COLONY" data-fr="ENTRER DANS LA COLONIE" data-pt="ENTRAR NA COLÔNIA" data-ru="ВОЙТИ В КОЛОНИЮ" data-zh="进入社区" href="https://t.me/rabbid_coin_sol" rel="noopener" target="_blank">◉ ENTER COLONY</a>
+<a class="btn secondary" href="https://t.me/rabbid_chat_sol" rel="noopener" target="_blank">💬 TELEGRAM CHAT</a>
+<a class="btn secondary" href="https://x.com/Rabbid_solana" rel="noopener" target="_blank">𝕏 OFFICIAL X</a>
+</div>
+</section><section class="colony-v2" id="colony">
+<div class="colony-shell">
+<div class="colony-inner">
+<div class="kicker" data-en="◉ COLONY NETWORK / LIVE HUB" data-ru="◉ СЕТЬ КОЛОНИИ / ЖИВОЙ ЦЕНТР" data-zh="◉ 社区网络 / 实时中心" data-pt="◉ REDE DA COLÔNIA / CENTRAL AO VIVO" data-fr="◉ RÉSEAU DE LA COLONIE / HUB EN DIRECT" data-ar="◉ شبكة المستعمرة / المركز المباشر">◉ COLONY NETWORK / LIVE HUB</div>
+<h3 data-en="RABBID COLONY" data-ru="КОЛОНИЯ RABBID" data-zh="RABBID 社区" data-pt="COLÔNIA RABBID" data-fr="COLONIE RABBID" data-ar="مستعمرة RABBID">RABBID COLONY</h3>
+<p class="intro"
+data-en="A living hub for the Rabbid universe: missions, community signals, experiments and new pieces of lore. Everything here is built around the character and the people around it."
+data-ru="Живой центр вселенной Rabbid: миссии, сигналы сообщества, эксперименты и новые куски лора. Здесь всё построено вокруг персонажа и людей вокруг него."
+data-zh="Rabbid 世界的实时中心：任务、社区信号、实验和新的世界观碎片。这里的一切都围绕这个角色以及身边的社区展开。"
+data-pt="Um hub vivo do universo Rabbid: missões, sinais da comunidade, experimentos e novos pedaços de lore. Tudo aqui gira em torno do personagem e das pessoas ao seu redor."
+data-fr="Un hub vivant de l’univers Rabbid : missions, signaux de communauté, expériences et nouveaux morceaux de lore. Tout ici tourne autour du personnage et de ceux qui l’entourent."
+data-ar="مركز حيّ لعالم Rabbid: مهام وإشارات للمجتمع وتجارب وقطع جديدة من القصة. كل شيء هنا يدور حول الشخصية والأشخاص من حولها.">A living hub for the Rabbid universe: missions, community signals, experiments and new pieces of lore. Everything here is built around the character and the people around it.</p>
+
+<div class="hub-grid">
+<div class="panel">
+<h4 data-en="Colony Feed" data-ru="Лента колонии" data-zh="社区动态" data-pt="Feed da Colônia" data-fr="Fil de la colonie" data-ar="موجز المستعمرة">Colony Feed</h4>
+<div class="feed" id="colonyFeed"></div>
+<div class="stats-line">
+<div class="tiny-stat">
+<span class="tiny-label" data-en="Signal" data-ru="Сигнал" data-zh="信号" data-pt="Sinal" data-fr="Signal" data-ar="الإشارة">Signal</span>
+<span class="tiny-value" id="colonySignal">92%</span>
+</div>
+<div class="tiny-stat">
+<span class="tiny-label" data-en="Chaos" data-ru="Хаос" data-zh="混沌" data-pt="Caos" data-fr="Chaos" data-ar="الفوضى">Chaos</span>
+<span class="tiny-value" id="colonyChaos">77%</span>
+</div>
+<div class="tiny-stat">
+<span class="tiny-label" data-en="Mode" data-ru="Режим" data-zh="模式" data-pt="Modo" data-fr="Mode" data-ar="الوضع">Mode</span>
+<span class="tiny-value" id="colonyMode">AWAKE</span>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<h4 data-en="Colony Missions" data-ru="Миссии колонии" data-zh="社区任务" data-pt="Missões da Colônia" data-fr="Missions de la colonie" data-ar="مهام المستعمرة">Colony Missions</h4>
+<div class="missions" id="colonyMissions">
+<label class="mission">
+<input data-mission="lore" type="checkbox"/>
+<span>
+<strong data-en="Read the Rabbid lore" data-ru="Прочитать лор Rabbid" data-zh="阅读 Rabbid 世界观" data-pt="Ler o lore do Rabbid" data-fr="Lire le lore de Rabbid" data-ar="اقرأ قصة Rabbid">Read the Rabbid lore</strong>
+<span data-en="Know the origin story." data-ru="Узнай историю происхождения." data-zh="了解起源故事。" data-pt="Conheça a história de origem." data-fr="Découvrez l’histoire des origines." data-ar="تعرّف على قصة البداية.">Know the origin story.</span>
+</span>
+<b class="mission-state" data-en="OPEN" data-ru="ОТКРЫТО" data-zh="开启" data-pt="ABERTO" data-fr="OUVERT" data-ar="مفتوح">OPEN</b>
+</label>
+
+<label class="mission">
+<input data-mission="chaos" type="checkbox"/>
+<span>
+<strong data-en="Trigger Chaos Lab" data-ru="Запустить Chaos Lab" data-zh="启动 Chaos Lab" data-pt="Ativar o Chaos Lab" data-fr="Activer le Chaos Lab" data-ar="شغّل مختبر الفوضى">Trigger Chaos Lab</strong>
+<span data-en="Wake the system." data-ru="Разбуди систему." data-zh="唤醒系统。" data-pt="Acorde o sistema." data-fr="Réveillez le système." data-ar="أيقظ النظام.">Wake the system.</span>
+</span>
+<b class="mission-state" data-en="OPEN" data-ru="ОТКРЫТО" data-zh="开启" data-pt="ABERTO" data-fr="OUVERT" data-ar="مفتوح">OPEN</b>
+</label>
+
+<label class="mission">
+<input data-mission="telegram" type="checkbox"/>
+<span>
+<strong data-en="Visit the Colony" data-ru="Посетить колонию" data-zh="访问社区" data-pt="Visitar a Colônia" data-fr="Visiter la colonie" data-ar="زر المستعمرة">Visit the Colony</strong>
+<span data-en="Join the community hub." data-ru="Присоединяйся к центру сообщества." data-zh="加入社区中心。" data-pt="Entre na central da comunidade." data-fr="Rejoignez le hub de la communauté." data-ar="انضم إلى مركز المجتمع.">Join the community hub.</span>
+</span>
+<b class="mission-state" data-en="OPEN" data-ru="ОТКРЫТО" data-zh="开启" data-pt="ABERTO" data-fr="OUVERT" data-ar="مفتوح">OPEN</b>
+</label>
+
+<label class="mission">
+<input data-mission="wall" type="checkbox"/>
+<span>
+<strong data-en="Send a creation" data-ru="Отправить работу" data-zh="提交作品" data-pt="Enviar uma criação" data-fr="Envoyer une création" data-ar="أرسل إبداعك">Send a creation</strong>
+<span data-en="Make a meme or Rabbid edit." data-ru="Сделай мем или эдит с Rabbid." data-zh="制作一个梗图或 Rabbid 编辑作品。" data-pt="Crie um meme ou edit do Rabbid." data-fr="Créez un mème ou un montage Rabbid." data-ar="اصنع ميم أو تعديلًا لـ Rabbid.">Make a meme or Rabbid edit.</span>
+</span>
+<b class="mission-state" data-en="OPEN" data-ru="ОТКРЫТО" data-zh="开启" data-pt="ABERTO" data-fr="OUVERT" data-ar="مفتوح">OPEN</b>
+</label>
+</div>
+
+<div class="hub-actions">
+<a class="hub-btn" data-en="◉ ENTER TELEGRAM" data-ru="◉ ВОЙТИ В TELEGRAM" data-zh="◉ ВОЙТИ В TELEGRAM" data-pt="◉ ENTRAR NO TELEGRAM" data-fr="◉ ENTRER SUR TELEGRAM" data-ar="◉ دخول تيليجرام" href="https://t.me/rabbid_coin_sol" rel="noopener" target="_blank">◉ ENTER TELEGRAM</a>
+<a class="hub-btn secondary" data-en="▣ VIEW WALL" data-ru="▣ ОТКРЫТЬ СТЕНУ" data-zh="▣ 查看社区墙" data-pt="▣ VER O MURAL" data-fr="▣ VOIR LE MUR" data-ar="▣ عرض الجدار" href="#wall">▣ VIEW WALL</a>
+</div>
+<div class="quote" id="rabbidQuote"></div>
+</div>
+</div>
+
+<div class="panel" style="margin-top:16px">
+<h4 data-en="Rabbid Mood" data-ru="Настроение Rabbid" data-zh="Rabbid 状态" data-pt="Humor do Rabbid" data-fr="Humeur de Rabbid" data-ar="مزاج Rabbid">Rabbid Mood</h4>
+<div class="mood">
+<div>
+<div class="mood-text" id="moodText"></div>
+<div class="mood-bar"><div class="mood-fill" id="moodFill"></div></div>
+</div>
+<div class="mood-emoji" id="moodEmoji">🐰</div>
+</div>
+</div>
+
+</div>
 </div>
 </section>
-
-
-
-
-
 <section class="live-stats section" id="live-stats">
-  <div class="live-head">
-    <div>
-      <div class="live-kicker">● LIVE ON SOLANA</div>
-      <h3 data-en="RABBID LIVE STATS" data-ru="ЖИВАЯ СТАТИСТИКА RABBID" data-zh="RABBID 实时数据" data-pt="ESTATÍSTICAS AO VIVO" data-fr="STATS RABBID EN DIRECT" data-ar="إحصائيات RABBID المباشرة">RABBID LIVE STATS</h3>
-    </div>
-    <div class="live-status"><span id="liveDot"></span><span id="liveUpdated" data-en="Updating…" data-ru="Обновление…" data-zh="更新中…" data-pt="Atualizando…" data-fr="Mise à jour…" data-ar="جارٍ التحديث…">Updating…</span></div>
-  </div>
-  <div class="stats-grid">
-    <div class="live-card"><span class="label" data-en="Current Price" data-ru="Текущая цена" data-zh="当前价格" data-pt="Preço atual" data-fr="Prix actuel" data-ar="السعر الحالي">Current Price</span><strong id="statPrice">—</strong><small id="statChange">—</small></div>
-    <div class="live-card"><span class="label" data-en="Market Cap" data-ru="Капитализация" data-zh="市值" data-pt="Capitalização" data-fr="Capitalisation" data-ar="القيمة السوقية">Market Cap</span><strong id="statMcap">—</strong></div>
-    <div class="live-card"><span class="label" data-en="Liquidity" data-ru="Ликвидность" data-zh="流动性" data-pt="Liquidez" data-fr="Liquidité" data-ar="السيولة">Liquidity</span><strong id="statLiquidity">—</strong></div>
-    <div class="live-card"><span class="label" data-en="Holders" data-ru="Холдеры" data-zh="持有者" data-pt="Holders" data-fr="Détenteurs" data-ar="حاملو التوكن">Holders</span><strong id="statHolders">—</strong></div>
-    <div class="live-card"><span class="label" data-en="24h Volume" data-ru="Объём за 24ч" data-zh="24小时成交量" data-pt="Volume 24h" data-fr="Volume 24h" data-ar="حجم التداول 24 ساعة">24h Volume</span><strong id="statVolume">—</strong></div>
-    <div class="live-card"><span class="label" data-en="24h Transactions" data-ru="Транзакции за 24ч" data-zh="24小时交易" data-pt="Transações 24h" data-fr="Transactions 24h" data-ar="المعاملات خلال 24 ساعة">24h Transactions</span><strong id="statTxns">—</strong></div>
-  </div>
-  <div class="live-note"><span>◈</span> <span data-en="Data refreshes automatically every 30 seconds." data-ru="Данные автоматически обновляются каждые 30 секунд." data-zh="数据每 30 秒自动更新。" data-pt="Os dados são atualizados automaticamente a cada 30 segundos." data-fr="Les données sont mises à jour automatiquement toutes les 30 secondes." data-ar="يتم تحديث البيانات تلقائيًا كل 30 ثانية.">Data refreshes automatically every 30 seconds.</span></div>
+<div class="live-head">
+<div>
+<div class="live-kicker">● LIVE ON SOLANA</div>
+<h3 data-ar="إحصائيات RABBID المباشرة" data-en="RABBID LIVE STATS" data-fr="STATS RABBID EN DIRECT" data-pt="ESTATÍSTICAS AO VIVO" data-ru="ЖИВАЯ СТАТИСТИКА RABBID" data-zh="RABBID 实时数据">RABBID LIVE STATS</h3>
+</div>
+<div class="live-status"><span id="liveDot"></span><span data-ar="جارٍ التحديث…" data-en="Updating…" data-fr="Mise à jour…" data-pt="Atualizando…" data-ru="Обновление…" data-zh="更新中…" id="liveUpdated">Updating…</span></div>
+</div>
+<div class="stats-grid">
+<div class="live-card"><span class="label" data-ar="السعر الحالي" data-en="Current Price" data-fr="Prix actuel" data-pt="Preço atual" data-ru="Текущая цена" data-zh="当前价格">Current Price</span><strong id="statPrice">—</strong><small id="statChange">—</small></div>
+<div class="live-card"><span class="label" data-ar="القيمة السوقية" data-en="Market Cap" data-fr="Capitalisation" data-pt="Capitalização" data-ru="Капитализация" data-zh="市值">Market Cap</span><strong id="statMcap">—</strong></div>
+<div class="live-card"><span class="label" data-ar="السيولة" data-en="Liquidity" data-fr="Liquidité" data-pt="Liquidez" data-ru="Ликвидность" data-zh="流动性">Liquidity</span><strong id="statLiquidity">—</strong></div>
+<div class="live-card"><span class="label" data-ar="حاملو التوكن" data-en="Holders" data-fr="Détenteurs" data-pt="Holders" data-ru="Холдеры" data-zh="持有者">Holders</span><strong id="statHolders">—</strong></div>
+<div class="live-card"><span class="label" data-ar="حجم التداول 24 ساعة" data-en="24h Volume" data-fr="Volume 24h" data-pt="Volume 24h" data-ru="Объём за 24ч" data-zh="24小时成交量">24h Volume</span><strong id="statVolume">—</strong></div>
+<div class="live-card"><span class="label" data-ar="المعاملات خلال 24 ساعة" data-en="24h Transactions" data-fr="Transactions 24h" data-pt="Transações 24h" data-ru="Транзакции за 24ч" data-zh="24小时交易">24h Transactions</span><strong id="statTxns">—</strong></div>
+</div>
+<div class="live-note"><span>◈</span> <span data-ar="يتم تحديث البيانات تلقائيًا كل 30 ثانية." data-en="Data refreshes automatically every 30 seconds." data-fr="Les données sont mises à jour automatiquement toutes les 30 secondes." data-pt="Os dados são atualizados automaticamente a cada 30 segundos." data-ru="Данные автоматически обновляются каждые 30 секунд." data-zh="数据每 30 秒自动更新。">Data refreshes automatically every 30 seconds.</span></div>
 </section>
-
 <section class="official-doc-section" id="document">
-  <div class="official-doc-card">
-    <div class="official-doc-kicker"
-      data-en="RABBID ARCHIVE / OFFICIAL RECORD"
-      data-ru="АРХИВ RABBID / ОФИЦИАЛЬНАЯ ЗАПИСЬ"
-      data-zh="RABBID 档案 / 官方记录"
-      data-pt="ARQUIVO RABBID / REGISTRO OFICIAL"
-      data-fr="ARCHIVES RABBID / REGISTRE OFFICIEL"
-      data-ar="أرشيف RABBID / السجل الرسمي">RABBID ARCHIVE / OFFICIAL RECORD</div>
-    <h2
-      data-en="Official Project Document"
-      data-ru="Официальный документ проекта"
-      data-zh="项目官方文件"
-      data-pt="Documento Oficial do Projeto"
-      data-fr="Document officiel du projet"
-      data-ar="الوثيقة الرسمية للمشروع">Official Project Document</h2>
-    <p
-      data-en="A primary project record covering the token identity, contract reference, development status, and project declarations. Read the document itself as the source of record rather than relying on summaries."
-      data-ru="Основной документ проекта, содержащий сведения об идентификаторе токена, контракте, статусе разработки и официальных заявлениях проекта. Ознакомьтесь с самим документом как с первичным источником, а не полагайтесь на пересказы."
-      data-zh="这是一份项目核心记录，涵盖代币身份、合约信息、开发状态及项目声明。请以文件原文作为主要依据，而不是仅依赖摘要或转述。"
-      data-pt="Um registro principal do projeto que reúne a identidade do token, a referência do contrato, o status de desenvolvimento e as declarações do projeto. Consulte o documento original como fonte primária, em vez de depender de resumos."
-      data-fr="Un document de référence du projet couvrant l’identité du token, la référence du contrat, l’état du développement et les déclarations du projet. Consultez le document lui-même comme source de référence plutôt que de vous fier aux résumés."
-      data-ar="سجل أساسي للمشروع يتناول هوية الرمز، ومرجع العقد، وحالة التطوير، وإعلانات المشروع. يُرجى الرجوع إلى الوثيقة نفسها باعتبارها المصدر الأساسي للمعلومات بدلًا من الاعتماد على الملخصات.">A primary project record covering the token identity, contract reference, development status, and project declarations. Read the document itself as the source of record rather than relying on summaries.</p>
-    <a class="btn official-doc-btn" href="rabbid_official_document.pdf" target="_blank" rel="noopener"
-      data-en="📄 OPEN OFFICIAL DOCUMENT"
-      data-ru="📄 ОТКРЫТЬ ОФИЦИАЛЬНЫЙ ДОКУМЕНТ"
-      data-zh="📄 打开官方文件"
-      data-pt="📄 ABRIR DOCUMENTO OFICIAL"
-      data-fr="📄 OUVRIR LE DOCUMENT OFFICIEL"
-      data-ar="📄 فتح الوثيقة الرسمية">📄 OPEN OFFICIAL DOCUMENT</a>
-  </div>
+<div class="official-doc-card">
+<div class="official-doc-kicker" data-ar="أرشيف RABBID / السجل الرسمي" data-en="RABBID ARCHIVE / OFFICIAL RECORD" data-fr="ARCHIVES RABBID / REGISTRE OFFICIEL" data-pt="ARQUIVO RABBID / REGISTRO OFICIAL" data-ru="АРХИВ RABBID / ОФИЦИАЛЬНАЯ ЗАПИСЬ" data-zh="RABBID 档案 / 官方记录">RABBID ARCHIVE / OFFICIAL RECORD</div>
+<h2 data-ar="الوثيقة الرسمية للمشروع" data-en="Official Project Document" data-fr="Document officiel du projet" data-pt="Documento Oficial do Projeto" data-ru="Официальный документ проекта" data-zh="项目官方文件">Official Project Document</h2>
+<p data-ar="سجل أساسي للمشروع يتناول هوية الرمز، ومرجع العقد، وحالة التطوير، وإعلانات المشروع. يُرجى الرجوع إلى الوثيقة نفسها باعتبارها المصدر الأساسي للمعلومات بدلًا من الاعتماد على الملخصات." data-en="A primary project record covering the token identity, contract reference, development status, and project declarations. Read the document itself as the source of record rather than relying on summaries." data-fr="Un document de référence du projet couvrant l’identité du token, la référence du contrat, l’état du développement et les déclarations du projet. Consultez le document lui-même comme source de référence plutôt que de vous fier aux résumés." data-pt="Um registro principal do projeto que reúne a identidade do token, a referência do contrato, o status de desenvolvimento e as declarações do projeto. Consulte o documento original como fonte primária, em vez de depender de resumos." data-ru="Основной документ проекта, содержащий сведения об идентификаторе токена, контракте, статусе разработки и официальных заявлениях проекта. Ознакомьтесь с самим документом как с первичным источником, а не полагайтесь на пересказы." data-zh="这是一份项目核心记录，涵盖代币身份、合约信息、开发状态及项目声明。请以文件原文作为主要依据，而不是仅依赖摘要或转述。">A primary project record covering the token identity, contract reference, development status, and project declarations. Read the document itself as the source of record rather than relying on summaries.</p>
+<a class="btn official-doc-btn" data-ar="📄 فتح الوثيقة الرسمية" data-en="📄 OPEN OFFICIAL DOCUMENT" data-fr="📄 OUVRIR LE DOCUMENT OFFICIEL" data-pt="📄 ABRIR DOCUMENTO OFICIAL" data-ru="📄 ОТКРЫТЬ ОФИЦИАЛЬНЫЙ ДОКУМЕНТ" data-zh="📄 打开官方文件" href="rabbid_official_document.pdf" rel="noopener" target="_blank">📄 OPEN OFFICIAL DOCUMENT</a>
+</div>
 </section>
-
-
-<section id="manifesto" class="section">
-<h3 data-en="The Manifesto" data-ar="البيان" data-ru="Манифест" data-zh="项目宣言" data-pt="O Manifesto" data-fr="Le Manifeste">The Manifesto</h3>
+<section class="section" id="manifesto">
+<h3 data-ar="البيان" data-en="The Manifesto" data-fr="Le Manifeste" data-pt="O Manifesto" data-ru="Манифест" data-zh="项目宣言">The Manifesto</h3>
 <div class="manifesto">
-<div class="card"><div class="quote">“<span data-en="The colony moves together. The code stays visible. The chaos stays organic." data-ar="المستعمرة تتحرك معًا. الكود يبقى شفافًا. والفوضى تبقى عضوية." data-ru="Колония движется вместе. Код остаётся открытым. Хаос остаётся органичным." data-zh="社区共同前进。代码保持透明。混沌保持自然。" data-pt="A colônia avança unida. O código permanece visível. O caos continua orgânico." data-fr="La colonie avance ensemble. Le code reste visible. Le chaos reste organique.">The colony moves together. The code stays visible. The chaos stays organic.</span>”</div></div>
-<div class="card"><div class="label" data-en="Principles" data-ar="المبادئ" data-ru="Принципы" data-zh="原则" data-pt="Princípios" data-fr="Principes">Principles</div><div class="list"><span data-en="01 — Transparency<br>02 — Community-first execution<br>03 — No hidden wallets<br>04 — Solana-native energy" data-ar="01 — الشفافية<br>02 — المجتمع أولًا<br>03 — لا محافظ مخفية<br>04 — طاقة أصلية من سولانا" data-ru="01 — Прозрачность<br>02 — Сообщество на первом месте<br>03 — Никаких скрытых кошельков<br>04 — Энергия Solana" data-zh="01 — 透明<br>02 — 社区优先<br>03 — 无隐藏钱包<br>04 — 原生 Solana 能量" data-pt="01 — Transparência<br>02 — Comunidade em primeiro lugar<br>03 — Sem carteiras ocultas<br>04 — Energia nativa da Solana" data-fr="01 — Transparence<br>02 — La communauté d'abord<br>03 — Aucun portefeuille caché<br>04 — Énergie native de Solana">01 — Transparency<br>02 — Community-first execution<br>03 — No hidden wallets<br>04 — Solana-native energy</span></div></div>
+<div class="card"><div class="quote">“<span data-ar="المستعمرة تتحرك معًا. الكود يبقى شفافًا. والفوضى تبقى عضوية." data-en="The colony moves together. The code stays visible. The chaos stays organic." data-fr="La colonie avance ensemble. Le code reste visible. Le chaos reste organique." data-pt="A colônia avança unida. O código permanece visível. O caos continua orgânico." data-ru="Колония движется вместе. Код остаётся открытым. Хаос остаётся органичным." data-zh="社区共同前进。代码保持透明。混沌保持自然。">The colony moves together. The code stays visible. The chaos stays organic.</span>”</div></div>
+<div class="card"><div class="label" data-ar="المبادئ" data-en="Principles" data-fr="Principes" data-pt="Princípios" data-ru="Принципы" data-zh="原则">Principles</div><div class="list"><span data-ar="01 — الشفافية&lt;br&gt;02 — المجتمع أولًا&lt;br&gt;03 — لا محافظ مخفية&lt;br&gt;04 — طاقة أصلية من سولانا" data-en="01 — Transparency&lt;br&gt;02 — Community-first execution&lt;br&gt;03 — No hidden wallets&lt;br&gt;04 — Solana-native energy" data-fr="01 — Transparence&lt;br&gt;02 — La communauté d'abord&lt;br&gt;03 — Aucun portefeuille caché&lt;br&gt;04 — Énergie native de Solana" data-pt="01 — Transparência&lt;br&gt;02 — Comunidade em primeiro lugar&lt;br&gt;03 — Sem carteiras ocultas&lt;br&gt;04 — Energia nativa da Solana" data-ru="01 — Прозрачность&lt;br&gt;02 — Сообщество на первом месте&lt;br&gt;03 — Никаких скрытых кошельков&lt;br&gt;04 — Энергия Solana" data-zh="01 — 透明&lt;br&gt;02 — 社区优先&lt;br&gt;03 — 无隐藏钱包&lt;br&gt;04 — 原生 Solana 能量">01 — Transparency<br/>02 — Community-first execution<br/>03 — No hidden wallets<br/>04 — Solana-native energy</span></div></div>
 </div>
 </section>
-
 <section class="section chaos-section" id="transmission">
-  <div class="chaos-head">
-    <div>
-      <div class="chaos-kicker" data-en="◉ RABBID SYSTEM / LIVE" data-ru="◉ СИСТЕМА RABBID / LIVE" data-zh="◉ RABBID 系统 / 实时" data-pt="◉ SISTEMA RABBID / AO VIVO" data-fr="◉ SYSTÈME RABBID / LIVE" data-ar="◉ نظام RABBID / مباشر">◉ RABBID SYSTEM / LIVE</div>
-      <h3 data-en="RABBID CHAOS LAB" data-ru="RABBID CHAOS LAB" data-zh="RABBID CHAOS LAB" data-pt="RABBID CHAOS LAB" data-fr="RABBID CHAOS LAB" data-ar="مختبر فوضى RABBID">RABBID CHAOS LAB</h3>
-    </div>
-    <div class="chaos-live"><span class="chaos-dot"></span><span data-en="SYSTEM ALIVE" data-ru="СИСТЕМА АКТИВНА" data-zh="系统在线" data-pt="SISTEMA ATIVO" data-fr="SYSTÈME ACTIF" data-ar="النظام نشط">SYSTEM ALIVE</span></div>
-  </div>
-  <div class="chaos-grid">
-    <div class="chaos-card">
-      <div class="chaos-label">✦ <span data-en="CHAOS METRICS" data-ru="МЕТРИКИ ХАОСА" data-zh="混沌指标" data-pt="MÉTRICAS DO CAOS" data-fr="MÉTRIQUES DU CHAOS" data-ar="مقاييس الفوضى">CHAOS METRICS</span></div>
-      <div class="chaos-title" data-en="COLONY // 01" data-ru="КОЛОНИЯ // 01" data-zh="社区 // 01" data-pt="COLÔNIA // 01" data-fr="COLONIE // 01" data-ar="المستعمرة // 01">COLONY // 01</div>
-      <p class="chaos-copy" data-en="The colony is moving. Energy levels are continuously pulsing through the network." data-ru="Колония движется. Энергия постоянно пульсирует по сети." data-zh="社区正在移动。能量持续在网络中脉动。" data-pt="A colônia está em movimento. A energia pulsa continuamente pela rede." data-fr="La colonie bouge. L'énergie circule en continu dans le réseau." data-ar="المستعمرة تتحرك. الطاقة تنبض باستمرار عبر الشبكة.">The colony is moving. Energy levels are continuously pulsing through the network.</p>
-      <div class="chaos-meter">
-        <div class="chaos-meter-row"><span data-en="ENERGY" data-ru="ЭНЕРГИЯ" data-zh="能量" data-pt="ENERGIA" data-fr="ÉNERGIE" data-ar="الطاقة">ENERGY</span><div class="chaos-track"><div class="chaos-fill" style="--w:92%"></div></div><span class="chaos-value">92%</span></div>
-        <div class="chaos-meter-row"><span data-en="CHAOS" data-ru="ХАОС" data-zh="混沌" data-pt="CAOS" data-fr="CHAOS" data-ar="الفوضى">CHAOS</span><div class="chaos-track"><div class="chaos-fill" style="--w:78%"></div></div><span class="chaos-value">78%</span></div>
-        <div class="chaos-meter-row"><span data-en="RABBID" data-ru="RABBID" data-zh="RABBID" data-pt="RABBID" data-fr="RABBID" data-ar="RABBID">RABBID</span><div class="chaos-track"><div class="chaos-fill" style="--w:100%"></div></div><span class="chaos-value">MAX</span></div>
-      </div>
-    </div>
-    <div class="chaos-card chaos-core" id="chaosCore">
-      <div class="chaos-orbit">
-        <span class="chaos-node cn1"></span><span class="chaos-node cn2"></span><span class="chaos-node cn3"></span><span class="chaos-node cn4"></span>
-        <img class="chaos-logo" src="rabbid-logo.png" alt="$RABBID">
-        <div class="chaos-core-caption" data-en="RABBID CORE" data-ru="ЯДРО RABBID" data-zh="RABBID 核心" data-pt="NÚCLEO RABBID" data-fr="NOYAU RABBID" data-ar="نواة RABBID">RABBID CORE</div>
-      </div>
-      <button class="chaos-action" id="chaosAction" type="button"><span>⚡</span><span data-en="RELEASE CHAOS" data-ru="ВЫПУСТИТЬ ХАОС" data-zh="释放混沌" data-pt="LIBERAR O CAOS" data-fr="LIBÉRER LE CHAOS" data-ar="إطلاق الفوضى">RELEASE CHAOS</span></button>
-    </div>
-    <div class="chaos-card">
-      <div class="chaos-label">◈ <span data-en="RECENT ACTIVITY" data-ru="ПОСЛЕДНЯЯ АКТИВНОСТЬ" data-zh="最近活动" data-pt="ATIVIDADE RECENTE" data-fr="ACTIVITÉ RÉCENTE" data-ar="النشاط الأخير">RECENT ACTIVITY</span></div>
-      <div class="chaos-event"><i></i><span data-en="COLONY WAKE" data-ru="ПРОБУЖДЕНИЕ КОЛОНИИ" data-zh="社区唤醒" data-pt="DESPERTAR DA COLÔNIA" data-fr="RÉVEIL DE LA COLONIE" data-ar="استيقاظ المستعمرة">COLONY WAKE</span><b data-en="LIVE" data-ru="LIVE" data-zh="实时" data-pt="AO VIVO" data-fr="LIVE" data-ar="مباشر">LIVE</b></div>
-      <div class="chaos-event"><i></i><span data-en="CORE PULSE" data-ru="ИМПУЛЬС ЯДРА" data-zh="核心脉冲" data-pt="PULSO DO NÚCLEO" data-fr="IMPULSION DU NOYAU" data-ar="نبض النواة">CORE PULSE</span><b data-en="SYNC" data-ru="СИНХРОН" data-zh="同步" data-pt="SINCRONIA" data-fr="SYNC" data-ar="مزامنة">SYNC</b></div>
-      <div class="chaos-event"><i></i><span data-en="RABBID SIGNAL" data-ru="СИГНАЛ RABBID" data-zh="RABBID 信号" data-pt="SINAL RABBID" data-fr="SIGNAL RABBID" data-ar="إشارة RABBID">RABBID SIGNAL</span><b data-en="ON" data-ru="ВКЛ" data-zh="开启" data-pt="ATIVO" data-fr="ON" data-ar="تشغيل">ON</b></div>
-      <div class="chaos-event"><i></i><span data-en="CHAOS ENGINE" data-ru="ДВИЖОК ХАОСА" data-zh="混沌引擎" data-pt="MOTOR DO CAOS" data-fr="MOTEUR DU CHAOS" data-ar="محرك الفوضى">CHAOS ENGINE</span><b data-en="READY" data-ru="ГОТОВ" data-zh="就绪" data-pt="PRONTO" data-fr="PRÊT" data-ar="جاهز">READY</b></div>
-      <div class="chaos-foot" data-en="No central command. Just a network of Rabbids, code and controlled chaos." data-ru="Без единого центра. Только сеть Rabbid, код и контролируемый хаос." data-zh="没有中央指挥。只有 Rabbid、代码与可控混沌组成的网络。" data-pt="Sem comando central. Apenas Rabbids, código e caos controlado." data-fr="Aucun commandement central. Seulement des Rabbids, du code et du chaos contrôlé." data-ar="لا قيادة مركزية. فقط شبكة من Rabbid والكود والفوضى المنضبطة.">No central command. Just a network of Rabbids, code and controlled chaos.</div>
-    </div>
-  </div>
-</section>
-
-
-<section class="upgrade-section" id="rabbid-id">
-  <div class="upgrade-head">
-    <div>
-      <div class="upgrade-kicker" data-en="◉ COLONY TOOL / 01" data-ru="◉ ИНСТРУМЕНТ КОЛОНИИ / 01" data-zh="◉ 社区工具 / 01" data-pt="◉ FERRAMENTA DA COLÔNIA / 01" data-fr="◉ OUTIL DE LA COLONIE / 01" data-ar="◉ أداة المستعمرة / 01">◉ COLONY TOOL / 01</div>
-      <h3 data-en="RABBID ID GENERATOR" data-ru="ГЕНЕРАТОР RABBID ID" data-zh="RABBID ID 生成器" data-pt="GERADOR DE ID RABBID" data-fr="GÉNÉRATEUR D’ID RABBID" data-ar="مولّد معرف RABBID">RABBID ID GENERATOR</h3>
-    </div>
-    <div class="upgrade-note" data-en="Generate a unique community-style Rabbid profile. It is a fun site identity, not an on-chain identity." data-ru="Создай уникальный профиль для колонии. Это игровая идентичность сайта, а не on-chain идентификатор." data-zh="生成独特的社区 Rabbid 档案。这是娱乐性的站点身份，不是链上身份。" data-pt="Gere um perfil Rabbid único para a comunidade. É uma identidade divertida do site, não uma identidade on-chain." data-fr="Générez un profil Rabbid unique pour la communauté. C’est une identité ludique du site, pas une identité on-chain." data-ar="أنشئ ملف Rabbid فريدًا للمجتمع. هذه هوية ترفيهية للموقع وليست هوية على السلسلة.">Generate a unique community-style Rabbid profile. It is a fun site identity, not an on-chain identity.</div>
-  </div>
-  <div class="id-panel">
-    <div class="upgrade-card id-display">
-      <div class="id-code" id="rabbidIdCode">RBD-7X9K-204</div>
-      <div class="id-sub" data-en="COLONY ACCESS PROFILE" data-ru="ПРОФИЛЬ ДОСТУПА КОЛОНИИ" data-zh="社区访问档案" data-pt="PERFIL DE ACESSO DA COLÔNIA" data-fr="PROFIL D’ACCÈS À LA COLONIE" data-ar="ملف وصول المستعمرة">COLONY ACCESS PROFILE</div>
-      <div class="id-traits">
-        <div class="id-trait"><b data-en="ROLE" data-ru="РОЛЬ" data-zh="角色" data-pt="FUNÇÃO" data-fr="RÔLE" data-ar="الدور">ROLE</b><span id="idRole">Chaos Scout</span></div>
-        <div class="id-trait"><b data-en="ENERGY" data-ru="ЭНЕРГИЯ" data-zh="能量" data-pt="ENERGIA" data-fr="ÉNERGIE" data-ar="الطاقة">ENERGY</b><span id="idEnergy">98 / 100</span></div>
-        <div class="id-trait"><b data-en="NOISE" data-ru="ШУМ" data-zh="噪音" data-pt="RUÍDO" data-fr="BRUIT" data-ar="الضوضاء">NOISE</b><span id="idNoise">MAXIMUM</span></div>
-        <div class="id-trait"><b data-en="CLASS" data-ru="КЛАСС" data-zh="类别" data-pt="CLASSE" data-fr="CLASSE" data-ar="الفئة">CLASS</b><span id="idClass">Blue Rabbid</span></div>
-      </div>
-      <div class="id-controls">
-        <button class="btn" id="generateRabbid" type="button" data-en="⚡ GENERATE ID" data-ru="⚡ СОЗДАТЬ ID" data-zh="⚡ 生成 ID" data-pt="⚡ GERAR ID" data-fr="⚡ GÉNÉRER L’ID" data-ar="⚡ إنشاء المعرف">⚡ GENERATE ID</button>
-        <button class="btn secondary copy" id="copyRabbidId" type="button" data-en="COPY ID" data-ru="СКОПИРОВАТЬ ID" data-zh="复制 ID" data-pt="COPIAR ID" data-fr="COPIER L’ID" data-ar="نسخ المعرف">COPY ID</button>
-      </div>
-    </div>
-    <div class="id-side">
-      <div class="upgrade-card">
-        <div class="upgrade-kicker" data-en="HOW IT WORKS" data-ru="КАК ЭТО РАБОТАЕТ" data-zh="工作方式" data-pt="COMO FUNCIONA" data-fr="COMMENT ÇA MARCHE" data-ar="كيف يعمل">HOW IT WORKS</div>
-        <h4 data-en="One click. New Rabbid." data-ru="Один клик. Новый Rabbid." data-zh="一键生成新的 Rabbid。" data-pt="Um clique. Um novo Rabbid." data-fr="Un clic. Un nouveau Rabbid." data-ar="نقرة واحدة. Rabbid جديد.">One click. New Rabbid.</h4>
-        <p data-en="The generator creates a local random profile from a small trait pool. Nothing is sent to a wallet or stored on-chain." data-ru="Генератор создаёт случайный локальный профиль из набора характеристик. Ничего не отправляется в кошелёк и не записывается on-chain." data-zh="生成器从特征池随机创建本地档案，不向钱包发送任何内容，也不会写入链上。" data-pt="O gerador cria um perfil local aleatório a partir de um conjunto de características. Nada é enviado para uma carteira ou gravado on-chain." data-fr="Le générateur crée un profil local aléatoire à partir d’un petit ensemble de traits. Rien n’est envoyé vers un portefeuille ni inscrit on-chain." data-ar="ينشئ المولد ملفًا عشوائيًا محليًا من مجموعة خصائص. لا يتم إرسال أي شيء إلى محفظة أو تسجيله على السلسلة.">The generator creates a local random profile from a small trait pool. Nothing is sent to a wallet or stored on-chain.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="upgrade-section" id="proof">
-  <div class="upgrade-head">
-    <div>
-      <div class="upgrade-kicker">◉ ON-CHAIN LAYER / 03</div>
-      <h3 data-en="RABBID ON-CHAIN LINKS" data-ru="RABBID — ОНЧЕЙН ССЫЛКИ" data-zh="RABBID 链上链接" data-pt="LINKS ON-CHAIN DO RABBID" data-fr="LIENS ON-CHAIN RABBID" data-ar="روابط RABBID على السلسلة">RABBID ON-CHAIN LINKS</h3>
-    </div>
-    <div class="upgrade-note"
-         data-en="Two official entry points for checking the RABBID token and its Pump.fun market."
-         data-ru="Две официальные точки входа для проверки токена RABBID и его рынка на Pump.fun."
-         data-zh="两个官方入口，用于查看 RABBID 代币和 Pump.fun 市场。"
-         data-pt="Dois pontos de entrada oficiais para verificar o token RABBID e o mercado no Pump.fun."
-         data-fr="Deux points d’entrée officiels pour vérifier le token RABBID et son marché sur Pump.fun."
-         data-ar="رابطان رسميان للتحقق من توكن RABBID وسوقه على Pump.fun.">Two official entry points for checking the RABBID token and its Pump.fun market.</div>
-  </div>
-
-  <div class="chain-links-grid">
-    <a class="chain-link-card solscan-card"
-       href="https://solscan.io/token/FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump"
-       target="_blank" rel="noopener">
-      <div class="chain-link-top">
-        <div class="chain-link-icon">◎</div>
-        <div class="chain-link-live">SOLANA EXPLORER</div>
-      </div>
-      <div class="chain-link-title">SOLSCAN</div>
-      <p data-en="Inspect the RABBID token directly on Solana: holders, transfers, token data and on-chain activity."
-         data-ru="Проверяй RABBID напрямую в Solana: холдеры, переводы, данные токена и ончейн-активность."
-         data-zh="直接在 Solana 上查看 RABBID：持有者、转账、代币数据和链上活动。"
-         data-pt="Veja o RABBID diretamente na Solana: holders, transferências, dados do token e atividade on-chain."
-         data-fr="Consulte RABBID directement sur Solana : holders, transferts, données du token et activité on-chain."
-         data-ar="تحقق من RABBID مباشرة على Solana: الحائزون والتحويلات وبيانات التوكن والنشاط على السلسلة.">Inspect the RABBID token directly on Solana: holders, transfers, token data and on-chain activity.</p>
-      <div class="chain-link-footer">
-        <span>FN2wcf…oCpump</span>
-        <b>OPEN ↗</b>
-      </div>
-    </a>
-
-    <a class="chain-link-card pump-card"
-       href="https://pump.fun/coin/FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump"
-       target="_blank" rel="noopener">
-      <div class="chain-link-top">
-        <div class="chain-link-icon">🐰</div>
-        <div class="chain-link-live">PUMP.FUN MARKET</div>
-      </div>
-      <div class="chain-link-title">PUMP.FUN</div>
-      <p data-en="Open the live RABBID market on Pump.fun and view the current bonding-curve market page."
-         data-ru="Открывай живой рынок RABBID на Pump.fun и смотри текущую страницу bonding curve."
-         data-zh="打开 Pump.fun 上的 RABBID 实时市场，查看当前 bonding curve 页面。"
-         data-pt="Abra o mercado ao vivo do RABBID no Pump.fun e veja a página atual da bonding curve."
-         data-fr="Ouvrez le marché RABBID en direct sur Pump.fun et consultez la page actuelle de la bonding curve."
-         data-ar="افتح سوق RABBID المباشر على Pump.fun وشاهد صفحة bonding curve الحالية.">Open the live RABBID market on Pump.fun and view the current bonding-curve market page.</p>
-      <div class="chain-link-footer">
-        <span>$RABBID · SOLANA</span>
-        <b>OPEN ↗</b>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section class="upgrade-section" id="roadmap">
-  <div class="upgrade-head">
-    <div>
-      <div class="upgrade-kicker">◉ COLONY BUILD / 04</div>
-      <h3 data-en="COLONY ROADMAP" data-ru="ROADMAP КОЛОНИИ" data-zh="社区路线图" data-pt="ROADMAP DA COLÔNIA" data-fr="ROADMAP DE LA COLONIE" data-ar="خارطة طريق المستعمرة">COLONY ROADMAP</h3>
-    </div>
-    <div class="upgrade-note" data-en="A public-facing build map for the website and community layer — not a promise of price or returns." data-ru="Публичная карта развития сайта и комьюнити-слоя — не обещание цены или доходности." data-zh="这是网站和社区层的公开构建地图，不是价格或收益承诺。" data-pt="Um mapa público de evolução do site e da comunidade — não uma promessa de preço ou retorno." data-fr="Une carte publique de construction du site et de la communauté — pas une promesse de prix ou de rendement." data-ar="خريطة عامة لتطوير الموقع وطبقة المجتمع — وليست وعدًا بالسعر أو العائد.">A public-facing build map for the website and community layer — not a promise of price or returns.</div>
-  </div>
-  <div class="roadmap-grid">
-    <div class="roadmap-card"><div class="roadmap-phase">PHASE 01</div><h4 data-en="FOUNDATION" data-ru="ФУНДАМЕНТ" data-zh="基础" data-pt="FUNDAÇÃO" data-fr="FONDATION" data-ar="الأساس">FOUNDATION</h4><p data-en="Identity, contract reference, multilingual site, core community links and official project record." data-ru="Айдентика, контракт, мультиязычный сайт, основные ссылки сообщества и официальный документ." data-zh="身份、合约、多语言网站、社区核心链接与官方项目文件。" data-pt="Identidade, contrato, site multilíngue, links centrais da comunidade e documento oficial." data-fr="Identité, contrat, site multilingue, liens communautaires et document officiel." data-ar="الهوية والعقد والموقع متعدد اللغات وروابط المجتمع الأساسية والوثيقة الرسمية.">Identity, contract reference, multilingual site, core community links and official project record.</p><span class="roadmap-status" data-en="LIVE" data-ru="ГОТОВО" data-zh="已上线" data-pt="ATIVO" data-fr="EN LIGNE" data-ar="مباشر">LIVE</span></div>
-    <div class="roadmap-card"><div class="roadmap-phase">PHASE 02</div><h4 data-en="EXPANSION" data-ru="РАСШИРЕНИЕ" data-zh="扩展" data-pt="EXPANSÃO" data-fr="EXPANSION" data-ar="التوسع">EXPANSION</h4><p data-en="Live market data, on-chain proof, chart access, stronger discovery and cleaner mobile flow." data-ru="Живые рыночные данные, on-chain proof, график, удобнее поиск и мобильный UX." data-zh="实时市场数据、链上验证、图表访问、更好的发现体验与移动端流程。" data-pt="Dados de mercado ao vivo, prova on-chain, acesso ao gráfico e melhor experiência mobile." data-fr="Données de marché en direct, preuve on-chain, accès au graphique et meilleur flux mobile." data-ar="بيانات السوق المباشرة وإثبات على السلسلة ووصول للرسم وتجربة أفضل على الهاتف.">Live market data, on-chain proof, chart access, stronger discovery and cleaner mobile flow.</p><span class="roadmap-status" data-en="BUILDING" data-ru="В РАЗРАБОТКЕ" data-zh="构建中" data-pt="EM CONSTRUÇÃO" data-fr="EN CONSTRUCTION" data-ar="قيد البناء">BUILDING</span></div>
-    <div class="roadmap-card"><div class="roadmap-phase">PHASE 03</div><h4 data-en="COLONY TOOLS" data-ru="ИНСТРУМЕНТЫ КОЛОНИИ" data-zh="社区工具" data-pt="FERRAMENTAS DA COLÔNIA" data-fr="OUTILS DE LA COLONIE" data-ar="أدوات المستعمرة">COLONY TOOLS</h4><p data-en="More interactive utilities, community identity layers, better media surfaces and lightweight participation tools." data-ru="Больше интерактива, идентичность сообщества, медиа и лёгкие инструменты участия." data-zh="更多互动工具、社区身份层、更好的媒体展示与轻量参与工具。" data-pt="Mais utilidades interativas, identidade da comunidade, mídia e ferramentas leves de participação." data-fr="Plus d’outils interactifs, identité communautaire, médias et participation légère." data-ar="المزيد من الأدوات التفاعلية وهوية المجتمع وواجهات الوسائط وأدوات المشاركة الخفيفة.">More interactive utilities, community identity layers, better media surfaces and lightweight participation tools.</p><span class="roadmap-status" data-en="NEXT" data-ru="СЛЕДОМ" data-zh="下一阶段" data-pt="PRÓXIMO" data-fr="SUIVANT" data-ar="التالي">NEXT</span></div>
-    <div class="roadmap-card"><div class="roadmap-phase">PHASE 04</div><h4 data-en="GLOBAL CHAOS" data-ru="ГЛОБАЛЬНЫЙ ХАОС" data-zh="全球混沌" data-pt="CAOS GLOBAL" data-fr="CHAOS GLOBAL" data-ar="الفوضى العالمية">GLOBAL CHAOS</h4><p data-en="Open-ended: community experiments, creative drops, new surfaces and whatever the colony builds next." data-ru="Открытая фаза: эксперименты сообщества, креативные дропы и всё, что колония построит дальше." data-zh="开放阶段：社区实验、创意发布、新界面以及社区接下来构建的一切。" data-pt="Fase aberta: experiências da comunidade, drops criativos, novas superfícies e o que a colônia construir depois." data-fr="Phase ouverte : expériences communautaires, drops créatifs, nouvelles surfaces et ce que la colonie construira ensuite." data-ar="مرحلة مفتوحة: تجارب المجتمع وإصدارات إبداعية وواجهات جديدة وما ستبنيه المستعمرة لاحقًا.">Open-ended: community experiments, creative drops, new surfaces and whatever the colony builds next.</p><span class="roadmap-status" data-en="OPEN" data-ru="ОТКРЫТО" data-zh="开放" data-pt="ABERTO" data-fr="OUVERT" data-ar="مفتوح">OPEN</span></div>
-  </div>
-</section>
-
-<section class="upgrade-section" id="wall">
-  <div class="upgrade-head">
-    <div>
-      <div class="upgrade-kicker">◉ COMMUNITY GALLERY / 05</div>
-      <h3 data-en="RABBID COLONY WALL" data-ru="СТЕНА КОЛОНИИ RABBID" data-zh="RABBID 社区墙" data-pt="MURAL DA COLÔNIA RABBID" data-fr="MUR DE LA COLONIE RABBID" data-ar="جدار مستعمرة RABBID">RABBID COLONY WALL</h3>
-    </div>
-    <div class="upgrade-note" data-en="A visual corner for the Rabbid universe. Built from the project’s supplied artwork." data-ru="Визуальный уголок вселенной Rabbid. Собран из предоставленных проекту изображений." data-zh="Rabbid 世界的视觉角落，使用项目提供的素材构建。" data-pt="Um canto visual do universo Rabbid, feito com os materiais fornecidos pelo projeto." data-fr="Un espace visuel pour l’univers Rabbid, construit avec les visuels fournis par le projet." data-ar="زاوية بصرية لعالم Rabbid، مبنية من المواد الرسومية المقدمة للمشروع.">A visual corner for the Rabbid universe. Built from the project’s supplied artwork.</div>
-  </div>
-  <div class="wall-grid" id="communityGalleryGrid">
-    <div class="wall-empty">
-      <div class="wall-empty-icon">◉</div>
-      <b data-en="COMMUNITY DROPS COMING SOON" data-ru="ФОТО КОЛОНИИ СКОРО ЗДЕСЬ" data-zh="社区作品即将上线" data-pt="CONTEÚDO DA COMUNIDADE EM BREVE" data-fr="CONTENU DE LA COMMUNAUTÉ BIENTÔT" data-ar="محتوى المجتمع قريبًا">COMMUNITY DROPS COMING SOON</b>
-      <span data-en="Send the colony photos, memes and edits. Selected pieces will be placed here." data-ru="Скидывай фото, мемы и эдиты — выбранные работы мы разместим здесь." data-zh="发送社区照片、表情包和作品，精选内容将在这里展示。" data-pt="Envie fotos, memes e edits da colônia. Os selecionados aparecerão aqui." data-fr="Envoyez vos photos, memes et edits. Les créations sélectionnées apparaîtront ici." data-ar="أرسل صور وميمات وتعديلات المجتمع، وستظهر الأعمال المختارة هنا.">Send the colony photos, memes and edits. Selected pieces will be placed here.</span>
-    </div>
-  </div>
-</section>
-
-<section class="upgrade-section" id="faq">
-  <div class="upgrade-head">
-    <div>
-      <div class="upgrade-kicker">◉ COLONY GUIDE / 06</div>
-      <h3 data-en="RABBID FAQ" data-ru="FAQ RABBID" data-zh="RABBID 常见问题" data-pt="FAQ RABBID" data-fr="FAQ RABBID" data-ar="الأسئلة الشائعة لـ RABBID">RABBID FAQ</h3>
-    </div>
-    <div class="upgrade-note" data-en="Short answers to the things visitors usually look for first." data-ru="Короткие ответы на то, что посетители обычно ищут в первую очередь." data-zh="简要回答访客通常首先想了解的问题。" data-pt="Respostas curtas para o que os visitantes normalmente procuram primeiro." data-fr="Des réponses courtes aux questions que les visiteurs cherchent généralement en premier." data-ar="إجابات قصيرة على ما يبحث عنه الزوار عادةً أولًا.">Short answers to the things visitors usually look for first.</div>
-  </div>
-  <div class="faq-list">
-    <details><summary data-en="What is the official contract?" data-ru="Какой официальный контракт?" data-zh="官方合约是什么？" data-pt="Qual é o contrato oficial?" data-fr="Quel est le contrat officiel ?" data-ar="ما هو العقد الرسمي؟">What is the official contract?</summary><div class="faq-answer">FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump</div></details>
-    <details><summary data-en="Where can I trade or view the market?" data-ru="Где смотреть рынок и торговать?" data-zh="在哪里查看市场或交易？" data-pt="Onde posso ver o mercado ou negociar?" data-fr="Où voir le marché ou trader ?" data-ar="أين يمكنني رؤية السوق أو التداول؟">Where can I trade or view the market?</summary><div class="faq-answer" data-en="Use the Pump.fun and Dexscreener buttons on this page. Always verify the mint address before interacting with a token." data-ru="Используй кнопки Pump.fun и Dexscreener на этой странице. Всегда проверяй mint-адрес перед взаимодействием с токеном." data-zh="使用本页的 Pump.fun 和 Dexscreener 按钮。与代币交互前务必核对 mint 地址。" data-pt="Use os botões Pump.fun e Dexscreener desta página. Sempre confirme o endereço mint antes de interagir com um token." data-fr="Utilisez les boutons Pump.fun et Dexscreener de cette page. Vérifiez toujours l’adresse mint avant d’interagir avec un token." data-ar="استخدم أزرار Pump.fun وDexscreener في هذه الصفحة. تحقق دائمًا من عنوان mint قبل التفاعل مع أي رمز.">Use the Pump.fun and Dexscreener buttons on this page. Always verify the mint address before interacting with a token.</div></details>
-    <details><summary data-en="Is the Rabbid ID an on-chain identity?" data-ru="Rabbid ID — это on-chain идентификатор?" data-zh="Rabbid ID 是链上身份吗？" data-pt="O Rabbid ID é uma identidade on-chain?" data-fr="Le Rabbid ID est-il une identité on-chain ?" data-ar="هل Rabbid ID هوية على السلسلة؟">Is the Rabbid ID an on-chain identity?</summary><div class="faq-answer" data-en="No. It is a local, playful profile generated by the website. It does not create a wallet, token, NFT or blockchain record." data-ru="Нет. Это локальный игровой профиль сайта. Он не создаёт кошелёк, токен, NFT или запись в блокчейне." data-zh="不是。它是网站生成的本地娱乐档案，不会创建钱包、代币、NFT 或区块链记录。" data-pt="Não. É um perfil divertido e local gerado pelo site. Não cria carteira, token, NFT ou registro na blockchain." data-fr="Non. C’est un profil ludique local généré par le site. Il ne crée ni portefeuille, ni token, ni NFT, ni enregistrement blockchain." data-ar="لا. إنه ملف ترفيهي محلي ينشئه الموقع، ولا ينشئ محفظة أو رمزًا أو NFT أو سجلًا على البلوكشين.">No. It is a local, playful profile generated by the website. It does not create a wallet, token, NFT or blockchain record.</div></details>
-    <details><summary data-en="Where is the official project document?" data-ru="Где официальный документ проекта?" data-zh="官方项目文件在哪里？" data-pt="Onde está o documento oficial?" data-fr="Où se trouve le document officiel du projet ?" data-ar="أين الوثيقة الرسمية للمشروع؟">Where is the official project document?</summary><div class="faq-answer" data-en="It is available in the Official Project Document block and in the Document link in the navigation." data-ru="Он доступен в блоке «Официальный документ проекта» и по ссылке Document в навигации." data-zh="它位于“官方项目文件”模块，也可以通过导航中的 Document 打开。" data-pt="Ele está disponível no bloco Documento Oficial do Projeto e no link Documento da navegação." data-fr="Il est disponible dans le bloc Document officiel du projet et via le lien Document de la navigation." data-ar="وهو متاح في قسم الوثيقة الرسمية للمشروع ومن رابط الوثيقة في شريط التنقل.">It is available in the Official Project Document block and in the Document link in the navigation.</div></details>
-    <details><summary data-en="Where can I get support?" data-ru="Где получить поддержку?" data-zh="在哪里获得支持？" data-pt="Onde consigo suporte?" data-fr="Où obtenir de l’aide ?" data-ar="أين أحصل على الدعم؟">Where can I get support?</summary><div class="faq-answer" data-en="Use the Telegram support link at the bottom of the page: @RBD_Sol." data-ru="Используй Telegram поддержки внизу страницы: @RBD_Sol." data-zh="使用页面底部的 Telegram 支持链接：@RBD_Sol。" data-pt="Use o link de suporte no Telegram no final da página: @RBD_Sol." data-fr="Utilisez le lien de support Telegram en bas de la page : @RBD_Sol." data-ar="استخدم رابط دعم تيليجرام أسفل الصفحة: @RBD_Sol.">Use the Telegram support link at the bottom of the page: @RBD_Sol.</div></details>
-  </div>
-</section>
-
-<section class="section">
-<h3 data-en="COLONY VIDEO" data-ru="ВИДЕО КОЛОНИИ" data-zh="社区视频" data-pt="VÍDEO DA COLÔNIA" data-fr="VIDÉO DE LA COLONIE" data-ar="فيديو المستعمرة">COLONY VIDEO</h3>
-<div class="card" style="padding:10px;overflow:hidden">
-  <div style="aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:radial-gradient(circle,#0b4fa3,#020817 65%);display:grid;place-items:center;position:relative">
-    <video controls playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;background:#000">
-<source src="rabbid-video.mp4" type="video/mp4">
-</video>
-  </div>
+<div class="chaos-head">
+<div>
+<div class="chaos-kicker" data-ar="◉ نظام RABBID / مباشر" data-en="◉ RABBID SYSTEM / LIVE" data-fr="◉ SYSTÈME RABBID / LIVE" data-pt="◉ SISTEMA RABBID / AO VIVO" data-ru="◉ СИСТЕМА RABBID / LIVE" data-zh="◉ RABBID 系统 / 实时">◉ RABBID SYSTEM / LIVE</div>
+<h3 data-ar="مختبر فوضى RABBID" data-en="RABBID CHAOS LAB" data-fr="RABBID CHAOS LAB" data-pt="RABBID CHAOS LAB" data-ru="RABBID CHAOS LAB" data-zh="RABBID CHAOS LAB">RABBID CHAOS LAB</h3>
+</div>
+<div class="chaos-live"><span class="chaos-dot"></span><span data-ar="النظام نشط" data-en="SYSTEM ALIVE" data-fr="SYSTÈME ACTIF" data-pt="SISTEMA ATIVO" data-ru="СИСТЕМА АКТИВНА" data-zh="系统在线">SYSTEM ALIVE</span></div>
+</div>
+<div class="chaos-grid">
+<div class="chaos-card">
+<div class="chaos-label">✦ <span data-ar="مقاييس الفوضى" data-en="CHAOS METRICS" data-fr="MÉTRIQUES DU CHAOS" data-pt="MÉTRICAS DO CAOS" data-ru="МЕТРИКИ ХАОСА" data-zh="混沌指标">CHAOS METRICS</span></div>
+<div class="chaos-title" data-ar="المستعمرة // 01" data-en="COLONY // 01" data-fr="COLONIE // 01" data-pt="COLÔNIA // 01" data-ru="КОЛОНИЯ // 01" data-zh="社区 // 01">COLONY // 01</div>
+<p class="chaos-copy" data-ar="المستعمرة تتحرك. الطاقة تنبض باستمرار عبر الشبكة." data-en="The colony is moving. Energy levels are continuously pulsing through the network." data-fr="La colonie bouge. L'énergie circule en continu dans le réseau." data-pt="A colônia está em movimento. A energia pulsa continuamente pela rede." data-ru="Колония движется. Энергия постоянно пульсирует по сети." data-zh="社区正在移动。能量持续在网络中脉动。">The colony is moving. Energy levels are continuously pulsing through the network.</p>
+<div class="chaos-meter">
+<div class="chaos-meter-row"><span data-ar="الطاقة" data-en="ENERGY" data-fr="ÉNERGIE" data-pt="ENERGIA" data-ru="ЭНЕРГИЯ" data-zh="能量">ENERGY</span><div class="chaos-track"><div class="chaos-fill" style="--w:92%"></div></div><span class="chaos-value">92%</span></div>
+<div class="chaos-meter-row"><span data-ar="الفوضى" data-en="CHAOS" data-fr="CHAOS" data-pt="CAOS" data-ru="ХАОС" data-zh="混沌">CHAOS</span><div class="chaos-track"><div class="chaos-fill" style="--w:78%"></div></div><span class="chaos-value">78%</span></div>
+<div class="chaos-meter-row"><span data-ar="RABBID" data-en="RABBID" data-fr="RABBID" data-pt="RABBID" data-ru="RABBID" data-zh="RABBID">RABBID</span><div class="chaos-track"><div class="chaos-fill" style="--w:100%"></div></div><span class="chaos-value">MAX</span></div>
+</div>
+</div>
+<div class="chaos-card chaos-core" id="chaosCore">
+<div class="chaos-orbit">
+<span class="chaos-node cn1"></span><span class="chaos-node cn2"></span><span class="chaos-node cn3"></span><span class="chaos-node cn4"></span>
+<img alt="$RABBID" class="chaos-logo" src="rabbid-logo.png"/>
+<div class="chaos-core-caption" data-ar="نواة RABBID" data-en="RABBID CORE" data-fr="NOYAU RABBID" data-pt="NÚCLEO RABBID" data-ru="ЯДРО RABBID" data-zh="RABBID 核心">RABBID CORE</div>
+</div>
+<button class="chaos-action" id="chaosAction" type="button"><span>⚡</span><span data-ar="إطلاق الفوضى" data-en="RELEASE CHAOS" data-fr="LIBÉRER LE CHAOS" data-pt="LIBERAR O CAOS" data-ru="ВЫПУСТИТЬ ХАОС" data-zh="释放混沌">RELEASE CHAOS</span></button>
+</div>
+<div class="chaos-card">
+<div class="chaos-label">◈ <span data-ar="النشاط الأخير" data-en="RECENT ACTIVITY" data-fr="ACTIVITÉ RÉCENTE" data-pt="ATIVIDADE RECENTE" data-ru="ПОСЛЕДНЯЯ АКТИВНОСТЬ" data-zh="最近活动">RECENT ACTIVITY</span></div>
+<div class="chaos-event"><i></i><span data-ar="استيقاظ المستعمرة" data-en="COLONY WAKE" data-fr="RÉVEIL DE LA COLONIE" data-pt="DESPERTAR DA COLÔNIA" data-ru="ПРОБУЖДЕНИЕ КОЛОНИИ" data-zh="社区唤醒">COLONY WAKE</span><b data-ar="مباشر" data-en="LIVE" data-fr="LIVE" data-pt="AO VIVO" data-ru="LIVE" data-zh="实时">LIVE</b></div>
+<div class="chaos-event"><i></i><span data-ar="نبض النواة" data-en="CORE PULSE" data-fr="IMPULSION DU NOYAU" data-pt="PULSO DO NÚCLEO" data-ru="ИМПУЛЬС ЯДРА" data-zh="核心脉冲">CORE PULSE</span><b data-ar="مزامنة" data-en="SYNC" data-fr="SYNC" data-pt="SINCRONIA" data-ru="СИНХРОН" data-zh="同步">SYNC</b></div>
+<div class="chaos-event"><i></i><span data-ar="إشارة RABBID" data-en="RABBID SIGNAL" data-fr="SIGNAL RABBID" data-pt="SINAL RABBID" data-ru="СИГНАЛ RABBID" data-zh="RABBID 信号">RABBID SIGNAL</span><b data-ar="تشغيل" data-en="ON" data-fr="ON" data-pt="ATIVO" data-ru="ВКЛ" data-zh="开启">ON</b></div>
+<div class="chaos-event"><i></i><span data-ar="محرك الفوضى" data-en="CHAOS ENGINE" data-fr="MOTEUR DU CHAOS" data-pt="MOTOR DO CAOS" data-ru="ДВИЖОК ХАОСА" data-zh="混沌引擎">CHAOS ENGINE</span><b data-ar="جاهز" data-en="READY" data-fr="PRÊT" data-pt="PRONTO" data-ru="ГОТОВ" data-zh="就绪">READY</b></div>
+<div class="chaos-foot" data-ar="لا قيادة مركزية. فقط شبكة من Rabbid والكود والفوضى المنضبطة." data-en="No central command. Just a network of Rabbids, code and controlled chaos." data-fr="Aucun commandement central. Seulement des Rabbids, du code et du chaos contrôlé." data-pt="Sem comando central. Apenas Rabbids, código e caos controlado." data-ru="Без единого центра. Только сеть Rabbid, код и контролируемый хаос." data-zh="没有中央指挥。只有 Rabbid、代码与可控混沌组成的网络。">No central command. Just a network of Rabbids, code and controlled chaos.</div>
+</div>
 </div>
 </section>
-
-<section id="contract" class="ca">
-<div class="ca-title" data-en="Official Solana Contract Address" data-ar="عنوان عقد سولانا الرسمي" data-ru="Официальный адрес контракта Solana" data-zh="官方 Solana 合约地址" data-pt="Endereço Oficial do Contrato Solana" data-fr="Adresse Officielle du Contrat Solana">Official Solana Contract Address</div>
-<div class="ca-row"><div class="address" id="address">FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump</div><button class="copy" onclick="copyAddress()" data-en="Copy" data-ar="نسخ" data-ru="Копировать" data-zh="复制" data-pt="Copiar" data-fr="Copier">Copy</button></div>
+<section class="upgrade-section" id="rabbid-id">
+<div class="upgrade-head">
+<div>
+<div class="upgrade-kicker" data-ar="◉ أداة المستعمرة / 01" data-en="◉ COLONY TOOL / 01" data-fr="◉ OUTIL DE LA COLONIE / 01" data-pt="◉ FERRAMENTA DA COLÔNIA / 01" data-ru="◉ ИНСТРУМЕНТ КОЛОНИИ / 01" data-zh="◉ 社区工具 / 01">◉ COLONY TOOL / 01</div>
+<h3 data-ar="مولّد معرف RABBID" data-en="RABBID ID GENERATOR" data-fr="GÉNÉRATEUR D’ID RABBID" data-pt="GERADOR DE ID RABBID" data-ru="ГЕНЕРАТОР RABBID ID" data-zh="RABBID ID 生成器">RABBID ID GENERATOR</h3>
+</div>
+<div class="upgrade-note" data-ar="أنشئ ملف Rabbid فريدًا للمجتمع. هذه هوية ترفيهية للموقع وليست هوية على السلسلة." data-en="Generate a unique community-style Rabbid profile. It is a fun site identity, not an on-chain identity." data-fr="Générez un profil Rabbid unique pour la communauté. C’est une identité ludique du site, pas une identité on-chain." data-pt="Gere um perfil Rabbid único para a comunidade. É uma identidade divertida do site, não uma identidade on-chain." data-ru="Создай уникальный профиль для колонии. Это игровая идентичность сайта, а не on-chain идентификатор." data-zh="生成独特的社区 Rabbid 档案。这是娱乐性的站点身份，不是链上身份。">Generate a unique community-style Rabbid profile. It is a fun site identity, not an on-chain identity.</div>
+</div>
+<div class="id-panel">
+<div class="upgrade-card id-display">
+<div class="id-code" id="rabbidIdCode">RBD-7X9K-204</div>
+<div class="id-sub" data-ar="ملف وصول المستعمرة" data-en="COLONY ACCESS PROFILE" data-fr="PROFIL D’ACCÈS À LA COLONIE" data-pt="PERFIL DE ACESSO DA COLÔNIA" data-ru="ПРОФИЛЬ ДОСТУПА КОЛОНИИ" data-zh="社区访问档案">COLONY ACCESS PROFILE</div>
+<div class="id-traits">
+<div class="id-trait"><b data-ar="الدور" data-en="ROLE" data-fr="RÔLE" data-pt="FUNÇÃO" data-ru="РОЛЬ" data-zh="角色">ROLE</b><span id="idRole">Chaos Scout</span></div>
+<div class="id-trait"><b data-ar="الطاقة" data-en="ENERGY" data-fr="ÉNERGIE" data-pt="ENERGIA" data-ru="ЭНЕРГИЯ" data-zh="能量">ENERGY</b><span id="idEnergy">98 / 100</span></div>
+<div class="id-trait"><b data-ar="الضوضاء" data-en="NOISE" data-fr="BRUIT" data-pt="RUÍDO" data-ru="ШУМ" data-zh="噪音">NOISE</b><span id="idNoise">MAXIMUM</span></div>
+<div class="id-trait"><b data-ar="الفئة" data-en="CLASS" data-fr="CLASSE" data-pt="CLASSE" data-ru="КЛАСС" data-zh="类别">CLASS</b><span id="idClass">Blue Rabbid</span></div>
+</div>
+<div class="id-controls">
+<button class="btn" data-ar="⚡ إنشاء المعرف" data-en="⚡ GENERATE ID" data-fr="⚡ GÉNÉRER L’ID" data-pt="⚡ GERAR ID" data-ru="⚡ СОЗДАТЬ ID" data-zh="⚡ 生成 ID" id="generateRabbid" type="button">⚡ GENERATE ID</button>
+<button class="btn secondary copy" data-ar="نسخ المعرف" data-en="COPY ID" data-fr="COPIER L’ID" data-pt="COPIAR ID" data-ru="СКОПИРОВАТЬ ID" data-zh="复制 ID" id="copyRabbidId" type="button">COPY ID</button>
+</div>
+</div>
+<div class="id-side">
+<div class="upgrade-card">
+<div class="upgrade-kicker" data-ar="كيف يعمل" data-en="HOW IT WORKS" data-fr="COMMENT ÇA MARCHE" data-pt="COMO FUNCIONA" data-ru="КАК ЭТО РАБОТАЕТ" data-zh="工作方式">HOW IT WORKS</div>
+<h4 data-ar="نقرة واحدة. Rabbid جديد." data-en="One click. New Rabbid." data-fr="Un clic. Un nouveau Rabbid." data-pt="Um clique. Um novo Rabbid." data-ru="Один клик. Новый Rabbid." data-zh="一键生成新的 Rabbid。">One click. New Rabbid.</h4>
+<p data-ar="ينشئ المولد ملفًا عشوائيًا محليًا من مجموعة خصائص. لا يتم إرسال أي شيء إلى محفظة أو تسجيله على السلسلة." data-en="The generator creates a local random profile from a small trait pool. Nothing is sent to a wallet or stored on-chain." data-fr="Le générateur crée un profil local aléatoire à partir d’un petit ensemble de traits. Rien n’est envoyé vers un portefeuille ni inscrit on-chain." data-pt="O gerador cria um perfil local aleatório a partir de um conjunto de características. Nada é enviado para uma carteira ou gravado on-chain." data-ru="Генератор создаёт случайный локальный профиль из набора характеристик. Ничего не отправляется в кошелёк и не записывается on-chain." data-zh="生成器从特征池随机创建本地档案，不向钱包发送任何内容，也不会写入链上。">The generator creates a local random profile from a small trait pool. Nothing is sent to a wallet or stored on-chain.</p>
+</div>
+</div>
+</div>
 </section>
-
-<section class="support-section" aria-label="Telegram support">
-  <div class="support-card">
-    <div class="support-kicker">COLONY SUPPORT</div>
-    <h2 data-en="Need help?" data-ru="Нужна помощь?" data-zh="需要帮助？" data-pt="Precisa de ajuda?" data-fr="Besoin d’aide ?" data-ar="تحتاج إلى مساعدة؟">Need help?</h2>
-    <p data-en="Contact the colony support team on Telegram." data-ru="Обратись в поддержку колонии в Telegram." data-zh="通过 Telegram 联系社区支持。" data-pt="Fale com o suporte da colônia no Telegram." data-fr="Contacte le support de la colonie sur Telegram." data-ar="تواصل مع دعم المستعمرة عبر تيليجرام.">Contact the colony support team on Telegram.</p>
-    <a class="support-telegram" href="https://t.me/RBD_Sol" target="_blank" rel="noopener"><span>✈</span> @RBD_Sol</a>
-  </div>
+<section class="upgrade-section" id="proof">
+<div class="upgrade-head">
+<div>
+<div class="upgrade-kicker">◉ ON-CHAIN LAYER / 03</div>
+<h3 data-ar="روابط RABBID على السلسلة" data-en="RABBID ON-CHAIN LINKS" data-fr="LIENS ON-CHAIN RABBID" data-pt="LINKS ON-CHAIN DO RABBID" data-ru="RABBID — ОНЧЕЙН ССЫЛКИ" data-zh="RABBID 链上链接">RABBID ON-CHAIN LINKS</h3>
+</div>
+<div class="upgrade-note" data-ar="رابطان رسميان للتحقق من توكن RABBID وسوقه على Pump.fun." data-en="Two official entry points for checking the RABBID token and its Pump.fun market." data-fr="Deux points d’entrée officiels pour vérifier le token RABBID et son marché sur Pump.fun." data-pt="Dois pontos de entrada oficiais para verificar o token RABBID e o mercado no Pump.fun." data-ru="Две официальные точки входа для проверки токена RABBID и его рынка на Pump.fun." data-zh="两个官方入口，用于查看 RABBID 代币和 Pump.fun 市场。">Two official entry points for checking the RABBID token and its Pump.fun market.</div>
+</div>
+<div class="chain-links-grid">
+<a class="chain-link-card solscan-card" href="https://solscan.io/token/FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump" rel="noopener" target="_blank">
+<div class="chain-link-top">
+<div class="chain-link-icon">◎</div>
+<div class="chain-link-live">SOLANA EXPLORER</div>
+</div>
+<div class="chain-link-title">SOLSCAN</div>
+<p data-ar="تحقق من RABBID مباشرة على Solana: الحائزون والتحويلات وبيانات التوكن والنشاط على السلسلة." data-en="Inspect the RABBID token directly on Solana: holders, transfers, token data and on-chain activity." data-fr="Consulte RABBID directement sur Solana : holders, transferts, données du token et activité on-chain." data-pt="Veja o RABBID diretamente na Solana: holders, transferências, dados do token e atividade on-chain." data-ru="Проверяй RABBID напрямую в Solana: холдеры, переводы, данные токена и ончейн-активность." data-zh="直接在 Solana 上查看 RABBID：持有者、转账、代币数据和链上活动。">Inspect the RABBID token directly on Solana: holders, transfers, token data and on-chain activity.</p>
+<div class="chain-link-footer">
+<span>FN2wcf…oCpump</span>
+<b>OPEN ↗</b>
+</div>
+</a>
+<a class="chain-link-card pump-card" href="https://pump.fun/coin/FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump" rel="noopener" target="_blank">
+<div class="chain-link-top">
+<div class="chain-link-icon">🐰</div>
+<div class="chain-link-live">PUMP.FUN MARKET</div>
+</div>
+<div class="chain-link-title">PUMP.FUN</div>
+<p data-ar="افتح سوق RABBID المباشر على Pump.fun وشاهد صفحة bonding curve الحالية." data-en="Open the live RABBID market on Pump.fun and view the current bonding-curve market page." data-fr="Ouvrez le marché RABBID en direct sur Pump.fun et consultez la page actuelle de la bonding curve." data-pt="Abra o mercado ao vivo do RABBID no Pump.fun e veja a página atual da bonding curve." data-ru="Открывай живой рынок RABBID на Pump.fun и смотри текущую страницу bonding curve." data-zh="打开 Pump.fun 上的 RABBID 实时市场，查看当前 bonding curve 页面。">Open the live RABBID market on Pump.fun and view the current bonding-curve market page.</p>
+<div class="chain-link-footer">
+<span>$RABBID · SOLANA</span>
+<b>OPEN ↗</b>
+</div>
+</a>
+</div>
 </section>
-
+<section class="upgrade-section" id="roadmap">
+<div class="upgrade-head">
+<div>
+<div class="upgrade-kicker">◉ COLONY BUILD / 04</div>
+<h3 data-ar="خارطة طريق المستعمرة" data-en="COLONY ROADMAP" data-fr="ROADMAP DE LA COLONIE" data-pt="ROADMAP DA COLÔNIA" data-ru="ROADMAP КОЛОНИИ" data-zh="社区路线图">COLONY ROADMAP</h3>
+</div>
+<div class="upgrade-note" data-ar="خريطة عامة لتطوير الموقع وطبقة المجتمع — وليست وعدًا بالسعر أو العائد." data-en="A public-facing build map for the website and community layer — not a promise of price or returns." data-fr="Une carte publique de construction du site et de la communauté — pas une promesse de prix ou de rendement." data-pt="Um mapa público de evolução do site e da comunidade — não uma promessa de preço ou retorno." data-ru="Публичная карта развития сайта и комьюнити-слоя — не обещание цены или доходности." data-zh="这是网站和社区层的公开构建地图，不是价格或收益承诺。">A public-facing build map for the website and community layer — not a promise of price or returns.</div>
+</div>
+<div class="roadmap-grid">
+<div class="roadmap-card"><div class="roadmap-phase">PHASE 01</div><h4 data-ar="الأساس" data-en="FOUNDATION" data-fr="FONDATION" data-pt="FUNDAÇÃO" data-ru="ФУНДАМЕНТ" data-zh="基础">FOUNDATION</h4><p data-ar="الهوية والعقد والموقع متعدد اللغات وروابط المجتمع الأساسية والوثيقة الرسمية." data-en="Identity, contract reference, multilingual site, core community links and official project record." data-fr="Identité, contrat, site multilingue, liens communautaires et document officiel." data-pt="Identidade, contrato, site multilíngue, links centrais da comunidade e documento oficial." data-ru="Айдентика, контракт, мультиязычный сайт, основные ссылки сообщества и официальный документ." data-zh="身份、合约、多语言网站、社区核心链接与官方项目文件。">Identity, contract reference, multilingual site, core community links and official project record.</p><span class="roadmap-status" data-ar="مباشر" data-en="LIVE" data-fr="EN LIGNE" data-pt="ATIVO" data-ru="ГОТОВО" data-zh="已上线">LIVE</span></div>
+<div class="roadmap-card"><div class="roadmap-phase">PHASE 02</div><h4 data-ar="التوسع" data-en="EXPANSION" data-fr="EXPANSION" data-pt="EXPANSÃO" data-ru="РАСШИРЕНИЕ" data-zh="扩展">EXPANSION</h4><p data-ar="بيانات السوق المباشرة وإثبات على السلسلة ووصول للرسم وتجربة أفضل على الهاتف." data-en="Live market data, on-chain proof, chart access, stronger discovery and cleaner mobile flow." data-fr="Données de marché en direct, preuve on-chain, accès au graphique et meilleur flux mobile." data-pt="Dados de mercado ao vivo, prova on-chain, acesso ao gráfico e melhor experiência mobile." data-ru="Живые рыночные данные, on-chain proof, график, удобнее поиск и мобильный UX." data-zh="实时市场数据、链上验证、图表访问、更好的发现体验与移动端流程。">Live market data, on-chain proof, chart access, stronger discovery and cleaner mobile flow.</p><span class="roadmap-status" data-ar="قيد البناء" data-en="BUILDING" data-fr="EN CONSTRUCTION" data-pt="EM CONSTRUÇÃO" data-ru="В РАЗРАБОТКЕ" data-zh="构建中">BUILDING</span></div>
+<div class="roadmap-card"><div class="roadmap-phase">PHASE 03</div><h4 data-ar="أدوات المستعمرة" data-en="COLONY TOOLS" data-fr="OUTILS DE LA COLONIE" data-pt="FERRAMENTAS DA COLÔNIA" data-ru="ИНСТРУМЕНТЫ КОЛОНИИ" data-zh="社区工具">COLONY TOOLS</h4><p data-ar="المزيد من الأدوات التفاعلية وهوية المجتمع وواجهات الوسائط وأدوات المشاركة الخفيفة." data-en="More interactive utilities, community identity layers, better media surfaces and lightweight participation tools." data-fr="Plus d’outils interactifs, identité communautaire, médias et participation légère." data-pt="Mais utilidades interativas, identidade da comunidade, mídia e ferramentas leves de participação." data-ru="Больше интерактива, идентичность сообщества, медиа и лёгкие инструменты участия." data-zh="更多互动工具、社区身份层、更好的媒体展示与轻量参与工具。">More interactive utilities, community identity layers, better media surfaces and lightweight participation tools.</p><span class="roadmap-status" data-ar="التالي" data-en="NEXT" data-fr="SUIVANT" data-pt="PRÓXIMO" data-ru="СЛЕДОМ" data-zh="下一阶段">NEXT</span></div>
+<div class="roadmap-card"><div class="roadmap-phase">PHASE 04</div><h4 data-ar="الفوضى العالمية" data-en="GLOBAL CHAOS" data-fr="CHAOS GLOBAL" data-pt="CAOS GLOBAL" data-ru="ГЛОБАЛЬНЫЙ ХАОС" data-zh="全球混沌">GLOBAL CHAOS</h4><p data-ar="مرحلة مفتوحة: تجارب المجتمع وإصدارات إبداعية وواجهات جديدة وما ستبنيه المستعمرة لاحقًا." data-en="Open-ended: community experiments, creative drops, new surfaces and whatever the colony builds next." data-fr="Phase ouverte : expériences communautaires, drops créatifs, nouvelles surfaces et ce que la colonie construira ensuite." data-pt="Fase aberta: experiências da comunidade, drops criativos, novas superfícies e o que a colônia construir depois." data-ru="Открытая фаза: эксперименты сообщества, креативные дропы и всё, что колония построит дальше." data-zh="开放阶段：社区实验、创意发布、新界面以及社区接下来构建的一切。">Open-ended: community experiments, creative drops, new surfaces and whatever the colony builds next.</p><span class="roadmap-status" data-ar="مفتوح" data-en="OPEN" data-fr="OUVERT" data-pt="ABERTO" data-ru="ОТКРЫТО" data-zh="开放">OPEN</span></div>
+</div>
+</section>
+<section class="upgrade-section" id="wall">
+<div class="upgrade-head">
+<div>
+<div class="upgrade-kicker">◉ COMMUNITY GALLERY / 05</div>
+<h3 data-ar="جدار مستعمرة RABBID" data-en="RABBID COLONY WALL" data-fr="MUR DE LA COLONIE RABBID" data-pt="MURAL DA COLÔNIA RABBID" data-ru="СТЕНА КОЛОНИИ RABBID" data-zh="RABBID 社区墙">RABBID COLONY WALL</h3>
+</div>
+<div class="upgrade-note" data-ar="زاوية بصرية لعالم Rabbid، مبنية من المواد الرسومية المقدمة للمشروع." data-en="A visual corner for the Rabbid universe. Built from the project’s supplied artwork." data-fr="Un espace visuel pour l’univers Rabbid, construit avec les visuels fournis par le projet." data-pt="Um canto visual do universo Rabbid, feito com os materiais fornecidos pelo projeto." data-ru="Визуальный уголок вселенной Rabbid. Собран из предоставленных проекту изображений." data-zh="Rabbid 世界的视觉角落，使用项目提供的素材构建。">A visual corner for the Rabbid universe. Built from the project’s supplied artwork.</div>
+</div>
+<div class="wall-grid" id="communityGalleryGrid">
+<div class="wall-empty">
+<div class="wall-empty-icon">◉</div>
+<b data-ar="محتوى المجتمع قريبًا" data-en="COMMUNITY DROPS COMING SOON" data-fr="CONTENU DE LA COMMUNAUTÉ BIENTÔT" data-pt="CONTEÚDO DA COMUNIDADE EM BREVE" data-ru="ФОТО КОЛОНИИ СКОРО ЗДЕСЬ" data-zh="社区作品即将上线">COMMUNITY DROPS COMING SOON</b>
+<span data-ar="أرسل صور وميمات وتعديلات المجتمع، وستظهر الأعمال المختارة هنا." data-en="Send the colony photos, memes and edits. Selected pieces will be placed here." data-fr="Envoyez vos photos, memes et edits. Les créations sélectionnées apparaîtront ici." data-pt="Envie fotos, memes e edits da colônia. Os selecionados aparecerão aqui." data-ru="Скидывай фото, мемы и эдиты — выбранные работы мы разместим здесь." data-zh="发送社区照片、表情包和作品，精选内容将在这里展示。">Send the colony photos, memes and edits. Selected pieces will be placed here.</span>
+</div>
+</div>
+</section>
+<section class="upgrade-section" id="faq">
+<div class="upgrade-head">
+<div>
+<div class="upgrade-kicker">◉ COLONY GUIDE / 06</div>
+<h3 data-ar="الأسئلة الشائعة لـ RABBID" data-en="RABBID FAQ" data-fr="FAQ RABBID" data-pt="FAQ RABBID" data-ru="FAQ RABBID" data-zh="RABBID 常见问题">RABBID FAQ</h3>
+</div>
+<div class="upgrade-note" data-ar="إجابات قصيرة على ما يبحث عنه الزوار عادةً أولًا." data-en="Short answers to the things visitors usually look for first." data-fr="Des réponses courtes aux questions que les visiteurs cherchent généralement en premier." data-pt="Respostas curtas para o que os visitantes normalmente procuram primeiro." data-ru="Короткие ответы на то, что посетители обычно ищут в первую очередь." data-zh="简要回答访客通常首先想了解的问题。">Short answers to the things visitors usually look for first.</div>
+</div>
+<div class="faq-list">
+<details><summary data-ar="ما هو العقد الرسمي؟" data-en="What is the official contract?" data-fr="Quel est le contrat officiel ?" data-pt="Qual é o contrato oficial?" data-ru="Какой официальный контракт?" data-zh="官方合约是什么？">What is the official contract?</summary><div class="faq-answer">FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump</div></details>
+<details><summary data-ar="أين يمكنني رؤية السوق أو التداول؟" data-en="Where can I trade or view the market?" data-fr="Où voir le marché ou trader ?" data-pt="Onde posso ver o mercado ou negociar?" data-ru="Где смотреть рынок и торговать?" data-zh="在哪里查看市场或交易？">Where can I trade or view the market?</summary><div class="faq-answer" data-ar="استخدم أزرار Pump.fun وDexscreener في هذه الصفحة. تحقق دائمًا من عنوان mint قبل التفاعل مع أي رمز." data-en="Use the Pump.fun and Dexscreener buttons on this page. Always verify the mint address before interacting with a token." data-fr="Utilisez les boutons Pump.fun et Dexscreener de cette page. Vérifiez toujours l’adresse mint avant d’interagir avec un token." data-pt="Use os botões Pump.fun e Dexscreener desta página. Sempre confirme o endereço mint antes de interagir com um token." data-ru="Используй кнопки Pump.fun и Dexscreener на этой странице. Всегда проверяй mint-адрес перед взаимодействием с токеном." data-zh="使用本页的 Pump.fun 和 Dexscreener 按钮。与代币交互前务必核对 mint 地址。">Use the Pump.fun and Dexscreener buttons on this page. Always verify the mint address before interacting with a token.</div></details>
+<details><summary data-ar="هل Rabbid ID هوية على السلسلة؟" data-en="Is the Rabbid ID an on-chain identity?" data-fr="Le Rabbid ID est-il une identité on-chain ?" data-pt="O Rabbid ID é uma identidade on-chain?" data-ru="Rabbid ID — это on-chain идентификатор?" data-zh="Rabbid ID 是链上身份吗？">Is the Rabbid ID an on-chain identity?</summary><div class="faq-answer" data-ar="لا. إنه ملف ترفيهي محلي ينشئه الموقع، ولا ينشئ محفظة أو رمزًا أو NFT أو سجلًا على البلوكشين." data-en="No. It is a local, playful profile generated by the website. It does not create a wallet, token, NFT or blockchain record." data-fr="Non. C’est un profil ludique local généré par le site. Il ne crée ni portefeuille, ni token, ni NFT, ni enregistrement blockchain." data-pt="Não. É um perfil divertido e local gerado pelo site. Não cria carteira, token, NFT ou registro na blockchain." data-ru="Нет. Это локальный игровой профиль сайта. Он не создаёт кошелёк, токен, NFT или запись в блокчейне." data-zh="不是。它是网站生成的本地娱乐档案，不会创建钱包、代币、NFT 或区块链记录。">No. It is a local, playful profile generated by the website. It does not create a wallet, token, NFT or blockchain record.</div></details>
+<details><summary data-ar="أين الوثيقة الرسمية للمشروع؟" data-en="Where is the official project document?" data-fr="Où se trouve le document officiel du projet ?" data-pt="Onde está o documento oficial?" data-ru="Где официальный документ проекта?" data-zh="官方项目文件在哪里？">Where is the official project document?</summary><div class="faq-answer" data-ar="وهو متاح في قسم الوثيقة الرسمية للمشروع ومن رابط الوثيقة في شريط التنقل." data-en="It is available in the Official Project Document block and in the Document link in the navigation." data-fr="Il est disponible dans le bloc Document officiel du projet et via le lien Document de la navigation." data-pt="Ele está disponível no bloco Documento Oficial do Projeto e no link Documento da navegação." data-ru="Он доступен в блоке «Официальный документ проекта» и по ссылке Document в навигации." data-zh="它位于“官方项目文件”模块，也可以通过导航中的 Document 打开。">It is available in the Official Project Document block and in the Document link in the navigation.</div></details>
+<details><summary data-ar="أين أحصل على الدعم؟" data-en="Where can I get support?" data-fr="Où obtenir de l’aide ?" data-pt="Onde consigo suporte?" data-ru="Где получить поддержку?" data-zh="在哪里获得支持？">Where can I get support?</summary><div class="faq-answer" data-ar="استخدم رابط دعم تيليجرام أسفل الصفحة: @RBD_Sol." data-en="Use the Telegram support link at the bottom of the page: @RBD_Sol." data-fr="Utilisez le lien de support Telegram en bas de la page : @RBD_Sol." data-pt="Use o link de suporte no Telegram no final da página: @RBD_Sol." data-ru="Используй Telegram поддержки внизу страницы: @RBD_Sol." data-zh="使用页面底部的 Telegram 支持链接：@RBD_Sol。">Use the Telegram support link at the bottom of the page: @RBD_Sol.</div></details>
+</div>
+</section>
+<section class="section">
+<h3 data-ar="فيديو المستعمرة" data-en="COLONY VIDEO" data-fr="VIDÉO DE LA COLONIE" data-pt="VÍDEO DA COLÔNIA" data-ru="ВИДЕО КОЛОНИИ" data-zh="社区视频">COLONY VIDEO</h3>
+<div class="card" style="padding:10px;overflow:hidden">
+<div style="aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:radial-gradient(circle,#0b4fa3,#020817 65%);display:grid;place-items:center;position:relative">
+<video controls="" playsinline="" preload="metadata" style="width:100%;height:100%;object-fit:cover;background:#000">
+<source src="rabbid-video.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</section>
+<section class="ca" id="contract">
+<div class="ca-title" data-ar="عنوان عقد سولانا الرسمي" data-en="Official Solana Contract Address" data-fr="Adresse Officielle du Contrat Solana" data-pt="Endereço Oficial do Contrato Solana" data-ru="Официальный адрес контракта Solana" data-zh="官方 Solana 合约地址">Official Solana Contract Address</div>
+<div class="ca-row"><div class="address" id="address">FN2wcfXmZ14ukg8GQ4h8PDTy3WrCz5rdvygnkcoCpump</div><button class="copy" data-ar="نسخ" data-en="Copy" data-fr="Copier" data-pt="Copiar" data-ru="Копировать" data-zh="复制" onclick="copyAddress()">Copy</button></div>
+</section>
+<section aria-label="Telegram support" class="support-section">
+<div class="support-card">
+<div class="support-kicker">COLONY SUPPORT</div>
+<h2 data-ar="تحتاج إلى مساعدة؟" data-en="Need help?" data-fr="Besoin d’aide ?" data-pt="Precisa de ajuda?" data-ru="Нужна помощь?" data-zh="需要帮助？">Need help?</h2>
+<p data-ar="تواصل مع دعم المستعمرة عبر تيليجرام." data-en="Contact the colony support team on Telegram." data-fr="Contacte le support de la colonie sur Telegram." data-pt="Fale com o suporte da colônia no Telegram." data-ru="Обратись в поддержку колонии в Telegram." data-zh="通过 Telegram 联系社区支持。">Contact the colony support team on Telegram.</p>
+<a class="support-telegram" href="https://t.me/RBD_Sol" rel="noopener" target="_blank"><span>✈</span> @RBD_Sol</a>
+</div>
+</section>
 </main>
-<footer>© 2026 $RABBID · <span data-en="Protected by Blockchain Autonomy" data-ar="محمي باستقلالية البلوكشين" data-ru="Защищено автономией блокчейна" data-zh="由区块链自治保护" data-pt="Protegido pela Autonomia da Blockchain" data-fr="Protégé par l'autonomie de la blockchain">Protected by Blockchain Autonomy</span> · Network ID: B0j4c sn0wm5n_</footer>
-<div id="toast" data-en="Address copied" data-ar="تم نسخ العنوان" data-ru="Адрес скопирован" data-zh="地址已复制" data-pt="Endereço copiado" data-fr="Adresse copiée">Address copied</div>
-
-<audio id="rabbidScream" preload="auto"><source src="rabbid-scream.mp3" type="audio/mpeg"></audio>
-<audio id="hoverSound" preload="auto"><source src="button-hover.mp3" type="audio/mpeg"></audio>
+<footer>© 2026 $RABBID · <span data-ar="محمي باستقلالية البلوكشين" data-en="Protected by Blockchain Autonomy" data-fr="Protégé par l'autonomie de la blockchain" data-pt="Protegido pela Autonomia da Blockchain" data-ru="Защищено автономией блокчейна" data-zh="由区块链自治保护">Protected by Blockchain Autonomy</span> · Network ID: B0j4c sn0wm5n_</footer>
+<div data-ar="تم نسخ العنوان" data-en="Address copied" data-fr="Adresse copiée" data-pt="Endereço copiado" data-ru="Адрес скопирован" data-zh="地址已复制" id="toast">Address copied</div>
+<audio id="rabbidScream" preload="auto"><source src="rabbid-scream.mp3" type="audio/mpeg"/></audio>
+<audio id="hoverSound" preload="auto"><source src="button-hover.mp3" type="audio/mpeg"/></audio>
 <script>
 let currentLang='en';
 function setLang(lang){
@@ -753,6 +962,7 @@ function setLang(lang){
    document.getElementById('idNoise')?.replaceChildren(document.createTextNode(p.noise[lang]||p.noise.en));
    document.getElementById('idClass')?.replaceChildren(document.createTextNode(p.klass[lang]||p.klass.en));
  }
+ if(typeof window.applyColonyLanguage==='function') window.applyColonyLanguage(lang);
 }
 setLang('en');
 
@@ -827,10 +1037,6 @@ function copyAddress(){
  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1500);
 }
 </script>
-
-
-
-
 <script id="rabbid-upgrade-scripts">
 (function(){
   const roles=[
@@ -884,7 +1090,6 @@ function copyAddress(){
 
 })();
 </script>
-
 <script>
 (function(){
   const btn=document.getElementById('chaosAction');
@@ -899,7 +1104,6 @@ function copyAddress(){
   });
 })();
 </script>
-
 <script id="rabbid-scream-button-script">
 (() => {
   const button = document.getElementById('rabbidScreamButton');
@@ -911,8 +1115,6 @@ function copyAddress(){
   });
 })();
 </script>
-
-
 <script id="rabbid-entry-controller">
 (() => {
   const screen = document.getElementById('entryScreen');
@@ -929,5 +1131,254 @@ function copyAddress(){
 })();
 </script>
 
+<script>
+(function(){
+  const colonyI18n = {
+    en: {
+      feed: [
+        ['Blue signal detected','The colony dashboard is online.','Now'],
+        ['Rabbid transmission received','Chaos Lab is ready for another run.','Live'],
+        ['Archive pulse','Another piece of the Rabbid universe was indexed.','Synced'],
+        ['Night shift active','The blue grid is still humming.','Active'],
+        ['Colony ping','A new visitor crossed the signal.','Seen'],
+        ['Chaos spike','Rabbid energy moved above baseline.','Alert']
+      ],
+      quotes: [
+        '“The colony does not sleep. It just changes channels.”',
+        '“When the signal turns blue, Rabbid is already there.”',
+        '“No map. No plan. Just another transmission.”',
+        '“Chaos is temporary. The archive is forever.”',
+        '“The colony moves one weird idea at a time.”'
+      ],
+      moods: [
+        ['CALM FOR 0.7 SECONDS',72,'🐰'],
+        ['CHAOS LEVEL RISING',91,'⚡'],
+        ['SIGNAL LOCKED',84,'📡'],
+        ['RABBID IS WATCHING',67,'👁️'],
+        ['FULL COLONY MODE',97,'💠']
+      ],
+      modes:{live:'LIVE', awake:'AWAKE', chaos:'CHAOS'},
+      missionState:{open:'OPEN', done:'DONE'}
+    },
+    ru: {
+      feed: [
+        ['Синий сигнал обнаружен','Панель колонии работает онлайн.','Сейчас'],
+        ['Получена передача Rabbid','Chaos Lab готов к новому запуску.','Прямой эфир'],
+        ['Импульс архива','Ещё одна часть вселенной Rabbid добавлена в архив.','Синхр.'],
+        ['Ночная смена активна','Синяя сетка всё ещё гудит.','Активно'],
+        ['Пинг колонии','Новый посетитель пересёк сигнал.','Замечен'],
+        ['Всплеск хаоса','Энергия Rabbid поднялась выше нормы.','Тревога']
+      ],
+      quotes: [
+        '«Колония не спит. Она просто меняет каналы.»',
+        '«Когда сигнал становится синим, Rabbid уже рядом.»',
+        '«Нет карты. Нет плана. Только новая передача.»',
+        '«Хаос временен. Архив навсегда.»',
+        '«Колония двигается по одной странной идее за раз.»'
+      ],
+      moods: [
+        ['СПОКОЕН 0,7 СЕКУНДЫ',72,'🐰'],
+        ['УРОВЕНЬ ХАОСА РАСТЁТ',91,'⚡'],
+        ['СИГНАЛ ЗАФИКСИРОВАН',84,'📡'],
+        ['RABBID НАБЛЮДАЕТ',67,'👁️'],
+        ['РЕЖИМ ПОЛНОЙ КОЛОНИИ',97,'💠']
+      ],
+      modes:{live:'ОНЛАЙН', awake:'ПРОБУЖДЁН', chaos:'ХАОС'},
+      missionState:{open:'ОТКРЫТО', done:'ГОТОВО'}
+    },
+    zh: {
+      feed: [
+        ['检测到蓝色信号','社区控制台已上线。','现在'],
+        ['收到 Rabbid 传输','Chaos Lab 已准备再次运行。','直播'],
+        ['档案脉冲','Rabbid 世界又一段内容已归档。','已同步'],
+        ['夜班已启动','蓝色网格仍在持续运转。','活跃'],
+        ['社区 Ping','一位新访客穿过了信号。','已发现'],
+        ['混沌峰值','Rabbid 能量已超过基线。','警报']
+      ],
+      quotes: [
+        '“社区不会睡觉，只是不断切换频道。”',
+        '“当信号变蓝时，Rabbid 已经在那里。”',
+        '“没有地图，没有计划，只有下一条传输。”',
+        '“混沌是暂时的，档案是永恒的。”',
+        '“社区每次只推进一个奇怪的想法。”'
+      ],
+      moods: [
+        ['平静了 0.7 秒',72,'🐰'],
+        ['混沌等级上升',91,'⚡'],
+        ['信号已锁定',84,'📡'],
+        ['RABBID 正在观察',67,'👁️'],
+        ['完整社区模式',97,'💠']
+      ],
+      modes:{live:'在线', awake:'苏醒', chaos:'混沌'},
+      missionState:{open:'开启', done:'完成'}
+    },
+    pt: {
+      feed: [
+        ['Sinal azul detectado','O painel da colônia está online.','Agora'],
+        ['Transmissão do Rabbid recebida','O Chaos Lab está pronto para outra rodada.','Ao vivo'],
+        ['Pulso do arquivo','Mais uma parte do universo Rabbid foi indexada.','Sincronizado'],
+        ['Turno da noite ativo','A grade azul continua vibrando.','Ativo'],
+        ['Ping da colônia','Um novo visitante atravessou o sinal.','Visto'],
+        ['Pico de caos','A energia do Rabbid passou do nível base.','Alerta']
+      ],
+      quotes: [
+        '“A colônia não dorme. Só muda de canal.”',
+        '“Quando o sinal fica azul, o Rabbid já está lá.”',
+        '“Sem mapa. Sem plano. Apenas outra transmissão.”',
+        '“O caos é temporário. O arquivo é eterno.”',
+        '“A colônia avança uma ideia estranha de cada vez.”'
+      ],
+      moods: [
+        ['CALMO POR 0,7 SEGUNDOS',72,'🐰'],
+        ['NÍVEL DE CAOS SUBINDO',91,'⚡'],
+        ['SINAL BLOQUEADO',84,'📡'],
+        ['RABBID ESTÁ OBSERVANDO',67,'👁️'],
+        ['MODO COLÔNIA TOTAL',97,'💠']
+      ],
+      modes:{live:'AO VIVO', awake:'DESPERTO', chaos:'CAOS'},
+      missionState:{open:'ABERTO', done:'CONCLUÍDO'}
+    },
+    fr: {
+      feed: [
+        ['Signal bleu détecté','Le tableau de la colonie est en ligne.','Maintenant'],
+        ['Transmission de Rabbid reçue','Le Chaos Lab est prêt pour un nouveau cycle.','En direct'],
+        ['Impulsion de l’archive','Un nouveau morceau de l’univers Rabbid a été indexé.','Synchronisé'],
+        ['Équipe de nuit active','La grille bleue continue de vibrer.','Actif'],
+        ['Ping de la colonie','Un nouveau visiteur a traversé le signal.','Vu'],
+        ['Pic de chaos','L’énergie de Rabbid est passée au-dessus de la normale.','Alerte']
+      ],
+      quotes: [
+        '« La colonie ne dort pas. Elle change simplement de canal. »',
+        '« Quand le signal devient bleu, Rabbid est déjà là. »',
+        '« Pas de carte. Pas de plan. Juste une nouvelle transmission. »',
+        '« Le chaos est temporaire. L’archive est éternelle. »',
+        '« La colonie avance une idée étrange à la fois. »'
+      ],
+      moods: [
+        ['CALME PENDANT 0,7 SECONDE',72,'🐰'],
+        ['NIVEAU DE CHAOS EN HAUSSE',91,'⚡'],
+        ['SIGNAL VERROUILLÉ',84,'📡'],
+        ['RABBID OBSERVE',67,'👁️'],
+        ['MODE COLONIE MAX',97,'💠']
+      ],
+      modes:{live:'EN DIRECT', awake:'ÉVEILLÉ', chaos:'CHAOS'},
+      missionState:{open:'OUVERT', done:'TERMINÉ'}
+    },
+    ar: {
+      feed: [
+        ['تم رصد الإشارة الزرقاء','لوحة المستعمرة متصلة الآن.','الآن'],
+        ['تم استلام بث Rabbid','مختبر الفوضى جاهز لجولة جديدة.','مباشر'],
+        ['نبضة الأرشيف','تمت إضافة جزء جديد من عالم Rabbid إلى الأرشيف.','متزامن'],
+        ['النوبة الليلية نشطة','الشبكة الزرقاء ما زالت تعمل.','نشط'],
+        ['إشارة من المستعمرة','عبر زائر جديد الإشارة.','تم الرصد'],
+        ['ارتفاع الفوضى','ارتفعت طاقة Rabbid فوق المستوى المعتاد.','تنبيه']
+      ],
+      quotes: [
+        '«المستعمرة لا تنام، بل تغيّر القنوات.»',
+        '«عندما تصبح الإشارة زرقاء، يكون Rabbid قد وصل بالفعل.»',
+        '«لا خريطة. لا خطة. مجرد بث جديد.»',
+        '«الفوضى مؤقتة. الأرشيف أبدي.»',
+        '«المستعمرة تتقدم بفكرة غريبة واحدة في كل مرة.»'
+      ],
+      moods: [
+        ['هادئ منذ 0.7 ثانية',72,'🐰'],
+        ['مستوى الفوضى يرتفع',91,'⚡'],
+        ['تم تثبيت الإشارة',84,'📡'],
+        ['RABBID يراقب',67,'👁️'],
+        ['وضع المستعمرة الكامل',97,'💠']
+      ],
+      modes:{live:'مباشر', awake:'مستيقظ', chaos:'فوضى'},
+      missionState:{open:'مفتوح', done:'مكتمل'}
+    }
+  };
+
+  const quotesByLang = colonyI18n;
+  const feedEl = document.getElementById('colonyFeed');
+  const quoteEl = document.getElementById('rabbidQuote');
+  const signalEl = document.getElementById('colonySignal');
+  const chaosEl = document.getElementById('colonyChaos');
+  const modeEl = document.getElementById('colonyMode');
+  const moodText = document.getElementById('moodText');
+  const moodFill = document.getElementById('moodFill');
+  const moodEmoji = document.getElementById('moodEmoji');
+
+  let colonyLang = window.currentLang || 'en';
+  let lastChaosState = {sig: null, chaos: null};
+
+  const esc = (value) => String(value).replace(/[&<>"']/g, ch => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[ch]));
+
+  function dict(){
+    return colonyI18n[colonyLang] || colonyI18n.en;
+  }
+
+  function refreshFeed(){
+    if(!feedEl) return;
+    const d = dict();
+    const offset = Math.floor(Date.now()/9000) % d.feed.length;
+    const rows = [0,1,2].map((n)=>d.feed[(offset+n)%d.feed.length]);
+    feedEl.innerHTML = rows.map((r)=>`<div class="feed-item"><span class="feed-dot"></span><div><div class="feed-main">${esc(r[0])}</div><div class="feed-sub">${esc(r[1])}</div></div><div class="feed-time">${esc(r[2])}</div></div>`).join('');
+    const sig = 86 + Math.floor(Math.random()*11);
+    const chaos = 72 + Math.floor(Math.random()*25);
+    lastChaosState = {sig, chaos};
+    if(signalEl) signalEl.textContent=sig+'%';
+    if(chaosEl) chaosEl.textContent=chaos+'%';
+    if(modeEl){
+      const mode = chaos > 90 ? 'chaos' : (sig > 92 ? 'awake' : 'live');
+      modeEl.textContent = d.modes[mode];
+    }
+    if(quoteEl) quoteEl.textContent = d.quotes[Math.floor(Math.random()*d.quotes.length)];
+  }
+
+  function refreshMood(){
+    const d = dict();
+    const m=d.moods[Math.floor(Math.random()*d.moods.length)];
+    if(moodText) moodText.textContent=m[0];
+    if(moodFill) moodFill.style.width=m[1]+'%';
+    if(moodEmoji) moodEmoji.textContent=m[2];
+  }
+
+  function applyMissionStateLanguage(){
+    const d = dict();
+    document.querySelectorAll('#colonyMissions .mission').forEach(row=>{
+      const cb=row.querySelector('input[type="checkbox"]');
+      const badge=row.querySelector('.mission-state');
+      if(cb && badge) badge.textContent = cb.checked ? d.missionState.done : d.missionState.open;
+    });
+  }
+
+  window.applyColonyLanguage = function(lang){
+    colonyLang = colonyI18n[lang] ? lang : 'en';
+    refreshFeed();
+    refreshMood();
+    applyMissionStateLanguage();
+  };
+
+  const key='rabbid_colony_missions_v3';
+  let state={};
+  try{ state=JSON.parse(localStorage.getItem(key)||'{}'); }catch(e){ state={}; }
+  document.querySelectorAll('#colonyMissions input[type="checkbox"]').forEach(cb=>{
+    const id=cb.dataset.mission;
+    cb.checked=!!state[id];
+    const row=cb.closest('.mission');
+    const badge=row.querySelector('.mission-state');
+    function update(){
+      row.classList.toggle('done',cb.checked);
+      const d=dict();
+      badge.textContent=cb.checked?d.missionState.done:d.missionState.open;
+      state[id]=cb.checked;
+      try{localStorage.setItem(key,JSON.stringify(state));}catch(e){}
+    }
+    cb.addEventListener('change',update);
+    update();
+  });
+
+  // Start in the current page language and keep the live elements localized.
+  window.applyColonyLanguage(colonyLang);
+  setInterval(refreshFeed,9000);
+  setInterval(refreshMood,5000);
+})();
+</script>
 </body>
 </html>
